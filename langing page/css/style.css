@@ -727,3 +727,10 @@ label {
     border: 1px solid #377900 !important;
     box-shadow: none !important;
 }
+
+.special-color-dark{
+background-color: #37454D;
+color: white;
+
+
+}
