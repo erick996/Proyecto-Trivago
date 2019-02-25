@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="main.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
+    <style> 
+
+    .search-bar-icon{
+    background: url(img/lupa.png) no-repeat scroll 12px 12px;
+    padding-left:48px;
+     }   
+
+    </style>
+
 </head>
-<body style="background-color:white; background-repeat:no-repeat; background-position:center center; background-attachment:fixed; margin: 0px">
-    <div style="width: 100%; height: 969px;">
+<body id="body">
+    <div class="header-botones">
         <header>
             <div style="width: 347.9px; height:64px; margin-left:auto">
                 <div class="menu-button">
@@ -33,23 +42,34 @@
         <section>
             <div style="width:100%; margin-top:90px">
             </div>
-            <div id="logo">
+            <div id="logo" style="cursor:pointer">
                 <img src="img/trivago-logo" alt="logo-trivago">
             </div>
             <div id="lema">
                 <h1 class="lema-trivago" >Encuentra tu hotel ideal y compara precios de distintas páginas web</h1>
             </div>
+            <form class="busqueda">
+                 <div class="searchingbar">
+                    <input type="text" placeholder="Ej.: Islas de la Bahía" class="search-bar search-bar-icon">
+                    <div class="search-btn">
+                            <button class="btn">
+                                <span>Buscar</span>
+                            </button>
+                     </div>
+                 </div>
+                
+            </form>
         
         </section>
     </div>
         <main>
             <div style="width: 1443px; height: 1390.40px; padding:0px 180.50px "></div>
         </main>
-        <footer id="footer"; style="background: #293339">
-            <div style="width: 948px; height: 78px; padding: 0px 16px; margin:0px 231.5px 32px 231.5px;"></div>
-            <div style="width: 980px; height: 122px; margin-left: auto; margin-right: auto"></div>
-            <div style="width: 980px; height: 164px; padding-bottom:16px; margin-right:auto; margin-left:auto"></div>
-            <div style="height: 55px; padding:32px; background: #37454D">
+        <footer id="footer" style="background: #293339">
+            <div class="footer-registro-email"></div>
+            <div class="footer-direction"></div>
+            <div class="footer-others" ></div>
+            <div class="footer-logo-copyright">
                 <div  id= "logo-footer">
                      <img src="img/logo-footer" alt="logo.footer">
                 </div>
