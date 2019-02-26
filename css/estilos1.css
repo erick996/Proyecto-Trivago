@@ -283,10 +283,21 @@ outline-offset: -3px;
 }
 
 .social-media{
-    width: 621px;
+    width: 621.33px;
     height: 36px;
     margin-bottom: 32px;
+    padding: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    
 }
+
+.footer-social-media{
+    display: inline-block;
+    margin-right: 6px; 
+    vertical-align: middle;
+}
+
 
 .footer-others{
     width: 980px; 
@@ -294,6 +305,34 @@ outline-offset: -3px;
     padding-bottom:16px; 
     margin-right:auto; 
     margin-left:auto;
+}
+
+.footer-items{
+    width: 294.6px;
+    height: 132px;
+    padding: 0px 16px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+    list-style: none;
+    float: left;
+}
+
+.footer-list{
+ color:white;
+ line-height: 22px;
+ width: 100%;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 0.9em;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
 }
 
 .footer-logo-copyright{
