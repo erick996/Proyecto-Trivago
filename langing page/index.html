@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Define basics and styles -->
     <meta charset="UTF-8">
     <title>Trivago</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>  <!-- Define que los estilos se apliquen a la mayoria de navegadores -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- Define que los estilos se apliquen a la mayoria de navegadores -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>  <!-- Tamaños de imagenes y demas elementos -->
-    <link rel="shortcut icon" href="img/favicon.ico"/>
-  
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Tamaños de imagenes y demas elementos -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
+
 <body>
-       
+
     <div style="background-color:white">
-      <br>
-      <img src="img/logo.png" alt="" style="margin-left: 330px;margin-right: 330px;">
-      <br>
-      <br>
+        <br>
+        <img src="img/logo.png" alt="" style="margin-left: 330px;margin-right: 330px;">
+        <br>
+        <br>
     </div>
-      
+
     <header>
-            
+
         <form id="searchForm" method="GET" action="">
 
             <!-- 1st row -->
             <div class="search">
-                <input id="search" type="search" title="Buscar" name="search" value="Islas de la Bahia, Honduras" placeholder="Buscar localizacion de un hotel...">
+                <input id="search" type="search" title="Buscar" name="search" value="Islas de la Bahia, Honduras"
+                    placeholder="Buscar localizacion de un hotel...">
                 <input type="submit" class="searchButton btn btn-primary" title="Buscar" value="Buscar">
             </div>
 
@@ -34,11 +37,13 @@
             <div id="essentials">
                 <div>
                     <label class="uselessLabel" for="checkin">Fecha de registro:</label>
-                    <input class="essentials" id="checkin" type="date" title="Seleccione fecha de registro" name="date" min="2018-12-01" max="2019-12-31" required>
+                    <input class="essentials" id="checkin" type="date" title="Seleccione fecha de registro" name="date"
+                        min="2018-12-01" max="2019-12-31" required>
                 </div>
                 <div>
                     <label class="uselessLabel" for="checkout">Fecha de salida:</label>
-                    <input class="essentials" id="checkout" type="date" title="Selecione fecha de salida" name="date" min="2018-12-01" max="2019-12-31" required>
+                    <input class="essentials" id="checkout" type="date" title="Selecione fecha de salida" name="date"
+                        min="2018-12-01" max="2019-12-31" required>
                 </div>
                 <div>
                     <label class="uselessLabel" for="rooms">Habitaciones disponibles:</label>
@@ -106,9 +111,11 @@
     <main>
         <div id="below">
             <div id="map">
-                <button type="button" class="viewMap btn btn-primary" data-toggle="modal" data-target="#mapModal" title="View Map">View Map</button>
+                <button type="button" class="viewMap btn btn-primary" data-toggle="modal" data-target="#mapModal"
+                    title="View Map">View Map</button>
             </div>
-            <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalCenterTitle"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content" style="width:600px;">
                         <div class="modal-header">
@@ -117,14 +124,30 @@
                         <div class="modal-body">
                             <div class="mapOuter">
                                 <div class="gmap_canvas">
-                                        
-                                    <iframe width="500" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1098801.5303044473!2d-86.50785974219336!3d16.581060652641963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69e617faf9546f%3A0x5c3b3787baccb59d!2sIslas+de+la+Bah%C3%ADa!5e0!3m2!1ses-419!2shn!4v1550386864929" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                                    <iframe width="500" height="500" id="gmap_canvas"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1098801.5303044473!2d-86.50785974219336!3d16.581060652641963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69e617faf9546f%3A0x5c3b3787baccb59d!2sIslas+de+la+Bah%C3%ADa!5e0!3m2!1ses-419!2shn!4v1550386864929"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                 </div>
-                                <style>.mapOuter{text-align:right;height:500px;width:500px;}.gmap_canvas{overflow:hidden;background:none!important;height:500px;width:500px;}</style>
+                                <style>
+                                    .mapOuter {
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 500px;
+                                    }
+
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 500px;
+                                    }
+                                </style>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="viewMap btn btn-secondary" title="Cerrar" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="viewMap btn btn-secondary" title="Cerrar"
+                                data-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +171,7 @@
                     <div id="carousel1" class="carousel slide carousel-fade" data-interval="false" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img  class="d-block w-100 image" src="img/imagen1.jpg" alt="Grand Roatan Caribbean">
+                                <img class="d-block w-100 image" src="img/imagen1.jpg" alt="Grand Roatan Caribbean">
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100 image" src="img/imagen2.jpg" alt="Grand Roatan Caribbean">
@@ -175,21 +198,23 @@
                         <span class="hotelName">Grand Roatan Caribbean</span>
                         <span class="stars">⭐⭐⭐⭐⭐ <span class="hotelText">Hotel</span></span>
                         <span class="hotelLocation">Roatàn</span>
-                        <span class="rates"><span class="rateNumber">8.9</span><span class="rateText">Excelente</span><span class="reviewsCount">(571 opiniones)</span></span>
+                        <span class="rates"><span class="rateNumber">8.9</span><span
+                                class="rateText">Excelente</span><span class="reviewsCount">(571
+                                opiniones)</span></span>
                         <span class="rateExtra">Excelente localizacion (9.2 / 10)</span>
                     </section>
                 </section>
                 <section class="hotelOther">
                     <div class="offer offerPressed btn btn-primary">
-                        <span class="site site1">Web del Hotel</span><br/>
+                        <span class="site site1">Web del Hotel</span><br />
                         <span class="otherSitePrice otherSitePrice1">$244</span>
                     </div>
                     <div class="offer btn btn-primary">
-                        <span class="site">Booking.com</span><br/>
+                        <span class="site">Booking.com</span><br />
                         <span class="otherSitePrice">$244</span>
                     </div>
                     <div class="offer btn btn-primary">
-                        <span class="site">Travelocity</span><br/>
+                        <span class="site">Travelocity</span><br />
                         <span class="otherSitePrice">$244</span>
                     </div>
                     <div class="moreDeals btn btn-primary">
@@ -207,7 +232,7 @@
                     </section>
                 </section>
             </div>
-          <div class="hotel">
+            <div class="hotel">
                 <section class="hotelBasic">
                     <div id="carousel2" class="carousel slide carousel-fade" data-interval="false" data-ride="carousel">
                         <div class="carousel-inner">
@@ -239,21 +264,23 @@
                         <span class="hotelName">Paradise Beach</span>
                         <span class="stars">⭐⭐⭐⭐⭐ <span class="hotelText">Hotel</span></span>
                         <span class="hotelLocation">Roatàn</span>
-                        <span class="rates"><span class="rateNumber">8.3</span><span class="rateText">Excelente</span><span class="reviewsCount">(727 opiniones)</span></span>
+                        <span class="rates"><span class="rateNumber">8.3</span><span
+                                class="rateText">Excelente</span><span class="reviewsCount">(727
+                                opiniones)</span></span>
                         <span class="rateExtra">Excelente localizacion (9.2 / 10)</span>
                     </section>
                 </section>
                 <section class="hotelOther">
                     <div class="offer btn btn-primary">
-                        <span class="site">Travelocity</span><br/>
+                        <span class="site">Travelocity</span><br />
                         <span class="otherSitePrice">$163</span>
                     </div>
                     <div class="offer btn btn-primary">
-                        <span class="site">Booking.com</span><br/>
+                        <span class="site">Booking.com</span><br />
                         <span class="otherSitePrice">$163</span>
                     </div>
                     <div class="offer btn btn-primary">
-                        <span class="site">Hotels.com</span><br/>
+                        <span class="site">Hotels.com</span><br />
                         <span class="otherSitePrice">$163</span>
                     </div>
                     <div class="moreDeals btn btn-primary">
@@ -278,64 +305,97 @@
             </div>
 
 
-            
-        
+
+
         </div>
     </main>
- 
-      <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
 
-    <!-- Footer Elements -->
-    <div class="container">
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
 
-      <!--Grid row-->
-      <div class="row">
+        <!-- Footer Elements -->
+        <div class="container">
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+            <!--Grid row-->
+            <div class="row">
 
-          <!-- Form -->
-          <form class="form-inline">
-           <h6>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!</h6>
-           
-          </form>
-          <!-- Form -->
-       
-        </div>
-        <!--Grid column-->
-         
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
 
-          <form class="input-group">
-            <input type="text" class="form-control form-control-sm" placeholder="Direccion de email" aria-label="Your email" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-sm btn-outline-white" type="button">Suscribirse</button>
+                    <!-- Form -->
+                    <form class="form-inline">
+                        <h6>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!
+                        </h6>
+
+                    </form>
+                    <!-- Form -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Direccion de email"
+                            aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white" type="button">Suscribirse</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!--Grid column-->
+
             </div>
-          </form>
+            <!--Grid row-->
 
         </div>
-        <!--Grid column-->
+        <hr style="border-color: rgb(68, 98, 116);">
+        <div class="container">
+            <div class="row">
+                <div style="padding-left:100px; padding-right:100px;" class="col-md-6 mb-4">
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <br><br><a id="an" href="">Pagina informativa</a>
+                </div>
+                <div class="col-md-6 mb-4">
 
-      </div>
-      <!--Grid row-->
+                    <form>
+                        <select class="form-control" style="width:50%;margin-left: 50%;">
+                            <option value="Honduras">Honduras</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="USA">USA</option>
+                    
+                        </select>
+                    </form>
 
-    </div>
-    <hr style="background-color: rgb(68, 98, 116);">
-    <br><br>
-    <!-- Footer Elements -->
-   
-    <!-- Copyright -->
-    <div style="background-color: rgb(68, 98, 116);" class="footer-copyright text-center py-3">© Copyright 2019 trivago | Todos los derechos reservados
-    </div>
-    <!-- Copyright -->
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Footer Elements -->
 
-  </footer>
-  <!-- Footer -->
-    
+        <!-- Copyright -->
+        <div style="background-color: rgb(68, 98, 116);" class="footer-copyright text-center py-3">© Copyright 2019
+            trivago | Todos los derechos reservados
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

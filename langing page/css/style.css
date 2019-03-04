@@ -731,6 +731,13 @@ label {
 .special-color-dark{
 background-color: #37454D;
 color: white;
-
-
+}
+#an{
+    color:rgb(214, 214, 214);
+    text-decoration: none;
+    font-size:14px;
+ }
+ #an:hover{
+    text-decoration:underline;
+    color:rgb(99, 113, 235);
 }
