@@ -740,3 +740,8 @@ color: white;
     text-decoration:underline;
     color:rgb(99, 113, 235);
 }
+
+.paginationNav{
+    justify-content: center;
+    display: flex;
+}
