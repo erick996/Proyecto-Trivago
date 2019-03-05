@@ -10,11 +10,7 @@ body{
     margin: 0px;
 
 }
-#enviar{
-    background-color: #007fad;
-    border: 1px solid #007fad;
-    border-bottom: 1px solid #005f81;
-}
+
 
 .header {
     position: relative;
@@ -30,29 +26,30 @@ body{
  
 #logo {
     display: block;
-    height: 50px;
+    height: 32px;
     width: 110px;
     margin: auto;
     position: static;
-    padding-top: 10px;
+    padding-top: 17px;
     align-self: center;
     margin: auto;
     
 }
 
-
- #login{
+.caja{
     background-color: white;    
-    width: 296px;
-    height: 544px;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(41,51,57,.5);
     padding: 12px;
     margin-left: auto;
     margin-right:auto;
-
+}
+ #login{
+    width: 296px;
+    height: 544px;
  }
+
  .h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     
@@ -104,17 +101,7 @@ input[type="text"], input[type="password"] {
     margin-left: 0px;
 }
 
-#enviar{
-    background-color: #007fad;
-    border: 1px solid #007fad;
-    font-size: 16px;
-    min-height: 44px;
-    line-height: 1;
-    text-align: center;
-    width: 100%;
-    padding: 0 44px;
-    margin: 4px 0;
-}
+
 
 #cuenta{
     margin-bottom: 32px;
@@ -123,9 +110,27 @@ input[type="text"], input[type="password"] {
     
 }
 
-#enviar:hover{
-    border-bottom: 1px solid #005f81;
+.enviar{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;    
+    background-color: #007fad;
+    border: 1px solid #007fad;
+    border-bottom: 1px solid #005f81;                
+    min-height: 44px;
+   
+    width: 100%;
+    padding: 0 44px;
+    margin: 4px 0;
+        
+    
+
 }
+.enviar:hover{
+    background-color: #005F81
+   }
 
 h2 a{
     font-family: Arial,Helvetica;
@@ -135,6 +140,21 @@ h2 a{
     margin-left: 50px;
     
 }
+.footnote{
+    color: #9ba2a6;
+    font-size: 14px;
 
+}
+
+/* FORGOR PASSWORD - ESTILOS */
+p{
+    line-height: 1.5;
+}
+
+#forgot{
+    width: 296px;
+    height: 322px;
+
+}
 
 
