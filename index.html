@@ -8,12 +8,18 @@
     <script src="main.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style> 
 
     .search-bar-icon{
     background: url(img/lupa.png) no-repeat scroll 12px 12px;
     padding-left:48px;
      }   
+
+    .icon-arrow{
+    background: url(img/arrow.png) no-repeat scroll 256px 16px;
+    
+    }
 
     </style>
 
@@ -23,18 +29,83 @@
         <header>
             <div style="width: 347.9px; height:64px; margin-left:auto">
                 <div class="menu-button">
-                    <input type="button" value="USD"; style="width: 65px; padding: 0px 16px 0px 16px;">
-                        
+                    <select name="moneda-btn" id="moneda-btn" class="menu-btn" >
+                        <optgroup label="Principales monedas" class="option">
+                            <option class="option" value="EUR">EUR - Euro</option>
+                            <option class="option" value="GBP">GBP - Libra Esterlina </option>
+                            <option class="option" value="USD">USD - Dólar EE. UU</option>
+                        </optgroup>
+                        <optgroup label="Todas las monedas" class="option">
+                            <option class="option" value="AED">AED - Dírham de los EAU</option>
+                            <option class="option" value="ARS">ARS - Peso argentino</option>
+                            <option class="option" value="AUD">AUD - Dólar Australiano</option>
+                            <option class="option" value="AZN">AZN - Manat azerbaiyano</option>
+                            <option class="option" value="BGN">BGN - Lev búlgaro</option>
+                            <option class="option" value="BHD">BHD - Dinar Bareiní</option>
+                            <option class="option" value="BRL">BRL - Real brasileño</option>
+                            <option class="option" value="CAD">CAD - Dólar canadiense</option>
+                            <option class="option" value="CHF">CHF - Franco suizo</option>
+                            <option class="option" value="CLP">CLP - Peso chileno</option>
+                            <option class="option" value="CNY">CNY - Yuan chino</option>
+                            <option class="option" value="COP">COP - Peso colombiano</option>
+                            <option class="option" value="CZK">CZK - Corona checa</option>
+                            <option class="option" value="DKK">DKK - Corona danesa</option>
+                            <option class="option" value="DZD">DZD - Dinar argelino</option>
+                            <option class="option" value="EGP">EGP - Libre egipcia</option>
+                            <option class="option" value="EUR">EUR - Euro</option>
+                            <option class="option" value="GBP">GBP - Libra esterlina</option>
+                            <option class="option" value="HKD">HKD - Dólar de hong kong</option>
+                            <option class="option" value="HRK">HRK - Kuna croata</option>
+                            <option class="option" value="HUF">HUF - Florín hungaro</option>
+                            <option class="option" value="IDR">IDR - Rupia indonesia</option>
+                            <option class="option" value="ILS">ILS - Shequel israelí</option>
+                            <option class="option" value="INR">INR - Rupa india</option>
+                            <option class="option" value="JPY">JPY - Yen japonés</option>
+                            <option class="option" value="KRW">KRW - Won surcoreano</option>
+                            <option class="option" value="KWD">KWD - Dinar kuwaití</option>
+                            <option class="option" value="KZT">KZT - Tenge kazajo</option>
+                            <option class="option" value="LBP">LBP - Libra libanesa</option>
+                            <option class="option" value="MAD">MAD - Dírham marroquí</option>
+                            <option class="option" value="MDL">MDL - Leu moldavo</option>
+                            <option class="option" value="MXN">MXN - Peso mexicano </option>
+                            <option class="option" value="MYR">MYR - Ringgit malayo</option>
+                            <option class="option" value="NGN">NGN - Naira nigeriano</option>
+                            <option class="option" value="NOK">NOK - Corona noruega</option>
+                            <option class="option" value="NZD">NZD - Dólar neozelandés</option>
+                            <option class="option" value="OMR">OMR - Rial omaní</option>
+                            <option class="option" value="PEN">PEN - Nuevo sol peruano</option>
+                            <option class="option" value="PHP">PHP - Peso filipino</option>
+                            <option class="option" value="PLN">PLN - Zloty polaco</option>
+                            <option class="option" value="QAR">QAR - Riyal qatarí</option>
+                            <option class="option" value="RON">RON - Leu romano</option>
+                            <option class="option" value="RSD">RSD - Dinar serbio</option>
+                            <option class="option" value="RUB">RUB - Rublo ruso</option>
+                            <option class="option" value="SAR">SAR - Riyal saudí</option>
+                            <option class="option" value="SEK">SEK - Corona sueca</option>
+                            <option class="option" value="SGD">SGD - Dólar singapurense</option>
+                            <option class="option" value="THB">THB - Baht tailandés</option>
+                            <option class="option" value="TND">TND - Dinar tunecino</option>
+                            <option class="option" value="TRY">TRY - Lira turca</option>
+                            <option class="option" value="TWD">TWD - Dólar taiwanés</option>
+                            <option class="option" value="UAH">UAH - Grivna ucraniana</option>
+                            <option class="option" value="USD">USD - Dólar EE. UU.</option>
+                            <option class="option" value="UYU">UYU - Peso uruguayo</option>
+                            <option class="option" value="VND">VND - Dong vietnamita</option>
+                            <option class="option" value="ZAR">ZAR - Rand sudafricano</option>
+                            
+                        </optgroup>
+                    </select>
                 </div>
                 <div class="menu-button">
-                    <input type="button" value="ES"; style="width: 65px; padding: 0px 16px 0px 16px;">
+                    <input id="idioma-btn" class="menu-btn" type="button" value="ES"> 
+                    </select>
                 </div>
                 <div class="menu-button">
-                    <input type="button" value="Registrarse"; style="width: 103.59px;">
+                    <input  class="menu-btn" type="button" value="Registrarse"; style="width: 103.59px;">
                     
                 </div>
                 <div class="menu-button">
-                    <input type="button" value="Iniciar sesión"; style="width: 113.7px; ">
+                    <input  class="menu-btn" type="button" value="Iniciar sesión"; style="width: 113.7px; ">
                     
                 </div>
             </div>
@@ -52,7 +123,7 @@
                  <div class="searchingbar">
                     <input type="text" placeholder="Ej.: Islas de la Bahía" class="search-bar search-bar-icon">
                     <div class="search-btn">
-                            <button class="buscar-btn">
+                            <button type="button" class="buscar-btn">
                                 <span>Buscar</span>
                             </button>
                      </div>
@@ -63,7 +134,51 @@
         </section>
     </div>
         <main>
-            <div style="width: 1443px; height: 1390.40px; padding:0px 180.50px "></div>
+            <div class="body-content" >
+                <h2 class="body-title">¿No sabes dónde ir? Déjanos inspirarte</h2>
+                <div class="body-categories">
+                    <ul class="categories" role="tablelist">
+                        <li role="tab" class="btn-list">
+                            <button type="button" class="categories-btn">Ciudades destacadas</button>
+                        </li>
+                        <li role="tab" class="btn-list">
+                            <button type="buttom" class="categories-btn">Destinos Populares</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="opt-hoteles">
+
+                </div>
+                <div class="informacion-tri">
+                    <div class="parrafo-info">
+                        <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
+                        <p class="texto">
+                            El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Además, te aportamos información útil para viajar a ciudades como Cancún o Ciudad de México. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo. Si buscas ideas para tu próxima aventura, recuerda que Guadalajara y sus alrededores son una excelente opción para viajes de una semana o más, y en nuestro buscador encontrarás una gran cantidad de hoteles disponibles.
+                        </p>
+                    </div>
+                    <div class="parrafo-info">
+                        <h3 class="h3">Encuentra hoteles baratos en trivago</h3>
+                        <p class="texto">
+                            Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet. Te ofrecemos la posibilidad de elegir entre una gran variedad de habitaciones en destinos de México como Monterrey y Los Cabos, así como también en ciudades y destinos vacacionales en el extranjero.
+                        </p>
+                    </div>
+                    <div class="parrafo-info">
+                        <h3 class="h3">Las opiniones de otros usuarios de ayudarán a encontrar tu hotel ideal</h3>
+                        <p class="texto">
+                            Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Puerto Vallarta y encontrar tu hotel ideal.
+                        </p>
+                    </div>
+                    <div class="parrafo-info">
+                        <h3 class="h3">Cómo reservar</h3>
+                        <p class="texto">
+                            trivago es el buscador de hoteles ideal para comparar entre una gran variedad de precios de numerosos hoteles y sitios web de reservaciones. Esto significa que decides en trivago qué hotel se ajusta más a tus necesidades y luego formalizas tu reservación en la página de la oferta que elijas, que está enlazada a nuestro buscador de hoteles. Por lo tanto, cuando hagas clic en el botón «Ver oferta», te redirigiremos a la página correspondiente para que reserves allí la oferta hotelera que hayas encontrado en trivago. <br>
+                            <br>
+                            ¡Deja que trivago te ayude a encontrar el precio que buscas en más de 400 sitios web de reservaciones!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </main>
         <footer id="footer" style="background: #293339">
             <div class="footer-registro-email">
@@ -131,7 +246,67 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-country">
+                    <select name="select-country" id="select-country" class="select-country icon-arrow">
+                        <option value="aa" class="country-options">العالم العربي</option>
+                        <option value="ar" class="country-options">Argentina</option>
+                        <option value="au" class="country-options">Australia</option>
+                        <option value="bg" class="country-options">България</option>
+                        <option value="be" class="country-options">België</option>
+                        <option value="br" class="country-options">Brasil</option>
+                        <option value="ca" class="country-options">Canada</option>
+                        <option value="cz" class="country-options">Česko</option>
+                        <option value="cl" class="country-options">Chile</option>
+                        <option value="co" class="country-options">Colombia</option>
+                        <option value="dk" class="country-options">Danmark</option>
+                        <option value="de" class="country-options">Deutchland</option>
+                        <option value="ec" class="country-options">Ecuador</option>
+                        <option value="gr" class="country-options">Ελλάδα</option>
+                        <option value="es" class="country-options">España</option>
+                        <option value="fr" class="country-options">France</option>
+                        <option value="kr" class="country-options">한국</option>
+                        <option value="hr" class="country-options">Hrvatska</option>
+                        <option value="in" class="country-options">India</option>
+                        <option value="id" class="country-options">Indonesia</option>
+                        <option value="ie" class="country-options">Ireland</option>
+                        <option value="it" class="country-options">Italia</option>
+                        <option value="hu" class="country-options">Magyarország</option>
+                        <option value="my" class="country-options">Malaysia</option>
+                        <option value="mx" class="country-options">Mexico</option>
+                        <option value="nl" class="country-options">Nederland</option>
+                        <option value="nz" class="country-options">New Zealand</option>
+                        <option value="no" class="country-options">Norge</option>
+                        <option value="at" class="country-options">Österreich</option>
+                        <option value="pe" class="country-options">Perú</option>
+                        <option value="ph" class="country-options">Philippines</option>
+                        <option value="pl" class="country-options">Polska</option>
+                        <option value="pt" class="country-options">Portugal</option>
+                        <option value="th" class="country-options">ประเทศไทย</option>
+                        <option value="jp" class="country-options">日本</option>
+                        <option value="ro" class="country-options">România</option>
+                        <option value="ru" class="country-options">Россия</option>
+                        <option value="ch" class="country-options">Schweiz</option>
+                        <option value="sg" class="country-options">Singapore</option>
+                        <option value="si" class="country-options">Slovenija</option>
+                        <option value="sk" class="country-options">Slovensko</option>
+                        <option value="za" class="country-options">South Africa</option>
+                        <option value="rs" class="country-options">Srbija</option>
+                        <option value="fi" class="country-options">Suomi</option>
+                        <option value="se" class="country-options">Sverige</option>
+                        <option value="tw" class="country-options">台灣</option>
+                        <option value="tr" class="country-options">Türkey</option>
+                        <option value="ae" class="country-options">UAE</option>
+                        <option value="uk" class="country-options">United Kingdom</option>
+                        <option value="uy" class="country-options">Uruguay</option>
+                        <option value="us" class="country-options">USA</option>
+                        <option value="vn" class="country-options">Việt Nam</option>
+                        <option value="hk" class="country-options">香港</option>
+                        <option value="il" class="country-options">ישראל</option>
+                        <option value="cn" class="country-options">中国</option>
+                    </select>
+                </div>
             </div>
+            
                 
             <div class="footer-others" >
                 <ul class="footer-items">
