@@ -1,3 +1,10 @@
+html {
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    color: #37454d;
+}
 body{
     background-color:rgb(235, 236, 237);
     margin: 0px;
@@ -9,12 +16,7 @@ body{
     border-bottom: 1px solid #005f81;
 }
 
-.caja-texto {
-    background-color: white;
-
-}
-
-.siteheader {
+.header {
     position: relative;
     padding:0;
     width: 100%;   
@@ -22,7 +24,7 @@ body{
     display: block;
     text-align: center;
     background-color: white;
-    margin-bottom:20px;
+    margin-bottom: 15px;
     box-shadow: 0 1px 4px rgba(41,51,57,.5);
 }
  
@@ -34,25 +36,105 @@ body{
     position: static;
     padding-top: 10px;
     align-self: center;
-    margin: autp;
+    margin: auto;
     
 }
 
 
  #login{
     background-color: white;    
-    width: 256px;
-    height: 534px;
-  
-       /* border: 10px solid white; */
-    border-radius: 30px;
-    position: absolute;
-    left:200px;
+    width: 296px;
+    height: 544px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
     padding: 12px;
     margin-left: auto;
     margin-right:auto;
- }
 
+ }
+ .h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    
+}
+.textmed {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+}
+    
+.textsub{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 16px 0;
+
+ 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #007fad;
+}
+input[type="text"], input[type="password"] {    
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+    color: #37454d;
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    background: transparent;
+    display: block;
+    /* font: inherit; */
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 12px;
+    text-align: left;
+}
+
+#checkbox{
+   margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 28px;
+    margin-left: 0px;
+}
+
+#enviar{
+    background-color: #007fad;
+    border: 1px solid #007fad;
+    font-size: 16px;
+    min-height: 44px;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    padding: 0 44px;
+    margin: 4px 0;
+}
+
+#cuenta{
+    margin-bottom: 32px;
+    line-height: 1.5;
+    margin: 16px 0;
+    
+}
+
+#enviar:hover{
+    border-bottom: 1px solid #005f81;
+}
+
+h2 a{
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-left: 50px;
+    
+}
 
 
 
