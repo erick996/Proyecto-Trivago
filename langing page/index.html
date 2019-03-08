@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Tamaños de imagenes y demas elementos -->
     <link rel="shortcut icon" href="img/favicon.ico" />
-   
+    <style> 
+        .icon-arrow{
+        background: url(img/arrow.png) no-repeat scroll 256px 16px;
+        
+        }
+    
+        </style>
 </head>
 
 <body>
@@ -316,86 +322,198 @@
           </nav>
     </main>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small special-color-dark pt-4">
-
-        <!-- Footer Elements -->
-        <div class="container">
-
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                    <!-- Form -->
-                    <form class="form-inline">
-                        <h6>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!
-                        </h6>
-
-                    </form>
-                    <!-- Form -->
-
+    <footer id="footer" style="background: #293339">
+        <div class="footer-registro-email">
+            <form class="subs-form">
+                <div class="subs-section">
+                    <p class="suscripciones">
+                        ¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!
+                    </p>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                    <form class="input-group">
-                        <input type="text" class="form-control form-control-sm" placeholder="Direccion de email"
-                            aria-label="Your email" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-sm btn-outline-white" type="button">Suscribirse</button>
-                        </div>
-                    </form>
-
+                <div class="subs-email">
+                    <input type="email" placeholder="Dirección de email" class="email-promos">
+                <button class="suscribirse-btn">
+                    <span class="subs-text">Suscribirse</span>
+                </button>    
                 </div>
-                <!--Grid column-->
-
+            </form>
+        </div>
+        <div class="footer-direction">
+            <div class="direction">
+                <p class="footer-address">
+                    <strong>trivago N.V.</strong>, Kesselstraße 5 – 7, 40221 Düsseldorf, Alemania
+                </p>
+                <ul class="social-media">
+                    <li class="footer-social-media">
+                        <a href="https://www.facebook.com/trivagoMX" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/facebook-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-social-media">
+                        <a href="https://www.twitter.com/trivago" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/twitter-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-social-media">
+                        <a href="https://www.instagram.com/trivago/" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/instagram-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-social-media">
+                        <a href="https://www.youtube.com/user/trivago" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/youtube-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-social-media">
+                        <a href="https://www.pinterest.com/trivago/" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/pinterest-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-social-media">
+                        <a href="https://www.linkedin.com/company/trivagonv" target="_blank" class="sm-reference">
+                            <span class="social-media-icon">
+                                <img src="img/linkedin-logo.png" >
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!--Grid row-->
-
-        </div>
-        <hr style="border-color: rgb(68, 98, 116);">
-        <div class="container">
-            <div class="row">
-                <div style="padding-left:100px; padding-right:100px;" class="col-md-6 mb-4">
-                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-pinterest"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <br><br><a id="an" href="">Pagina informativa</a>
-                </div>
-                <div class="col-md-6 mb-4">
-
-                    <form>
-                        <select class="form-control" style="width:50%;margin-left: 50%;">
-                            <option value="Honduras">Honduras</option>
-                            <option value="Nicaragua">Nicaragua</option>
-                            <option value="Panama">Panama</option>
-                            <option value="Guatemala">Guatemala</option>
-                            <option value="USA">USA</option>
-                    
-                        </select>
-                    </form>
-
-                </div>
+            <div class="footer-country">
+                <select name="select-country" id="select-country" class="select-country icon-arrow">
+                    <option value="aa" class="country-options">العالم العربي</option>
+                    <option value="ar" class="country-options">Argentina</option>
+                    <option value="au" class="country-options">Australia</option>
+                    <option value="bg" class="country-options">България</option>
+                    <option value="be" class="country-options">België</option>
+                    <option value="br" class="country-options">Brasil</option>
+                    <option value="ca" class="country-options">Canada</option>
+                    <option value="cz" class="country-options">Česko</option>
+                    <option value="cl" class="country-options">Chile</option>
+                    <option value="co" class="country-options">Colombia</option>
+                    <option value="dk" class="country-options">Danmark</option>
+                    <option value="de" class="country-options">Deutchland</option>
+                    <option value="ec" class="country-options">Ecuador</option>
+                    <option value="gr" class="country-options">Ελλάδα</option>
+                    <option value="es" class="country-options">España</option>
+                    <option value="fr" class="country-options">France</option>
+                    <option value="kr" class="country-options">한국</option>
+                    <option value="hr" class="country-options">Hrvatska</option>
+                    <option value="in" class="country-options">India</option>
+                    <option value="id" class="country-options">Indonesia</option>
+                    <option value="ie" class="country-options">Ireland</option>
+                    <option value="it" class="country-options">Italia</option>
+                    <option value="hu" class="country-options">Magyarország</option>
+                    <option value="my" class="country-options">Malaysia</option>
+                    <option value="mx" class="country-options">Mexico</option>
+                    <option value="nl" class="country-options">Nederland</option>
+                    <option value="nz" class="country-options">New Zealand</option>
+                    <option value="no" class="country-options">Norge</option>
+                    <option value="at" class="country-options">Österreich</option>
+                    <option value="pe" class="country-options">Perú</option>
+                    <option value="ph" class="country-options">Philippines</option>
+                    <option value="pl" class="country-options">Polska</option>
+                    <option value="pt" class="country-options">Portugal</option>
+                    <option value="th" class="country-options">ประเทศไทย</option>
+                    <option value="jp" class="country-options">日本</option>
+                    <option value="ro" class="country-options">România</option>
+                    <option value="ru" class="country-options">Россия</option>
+                    <option value="ch" class="country-options">Schweiz</option>
+                    <option value="sg" class="country-options">Singapore</option>
+                    <option value="si" class="country-options">Slovenija</option>
+                    <option value="sk" class="country-options">Slovensko</option>
+                    <option value="za" class="country-options">South Africa</option>
+                    <option value="rs" class="country-options">Srbija</option>
+                    <option value="fi" class="country-options">Suomi</option>
+                    <option value="se" class="country-options">Sverige</option>
+                    <option value="tw" class="country-options">台灣</option>
+                    <option value="tr" class="country-options">Türkey</option>
+                    <option value="ae" class="country-options">UAE</option>
+                    <option value="uk" class="country-options">United Kingdom</option>
+                    <option value="uy" class="country-options">Uruguay</option>
+                    <option value="us" class="country-options">USA</option>
+                    <option value="vn" class="country-options">Việt Nam</option>
+                    <option value="hk" class="country-options">香港</option>
+                    <option value="il" class="country-options">ישראל</option>
+                    <option value="cn" class="country-options">中国</option>
+                </select>
             </div>
         </div>
-        <br><br>
-        <!-- Footer Elements -->
+        
+            
+        <div class="footer-others" >
+            <ul class="footer-items">
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link"> Presentación</a>
+                </li>
+                <li class="footer-list">
+                   <a href="#" target="_blank" class="footer-link">Trabajar en trivago</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Ofertas de empleo</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Prensa</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Investor Relations</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Expedia</a>
+                </li>
+            </ul>
+            <ul class="footer-items"> 
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">App de trivago: para dispositivos móviles</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">trivago Hotel Manager: para hoteleros</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">trivago Magazine</a>
+                </li>
+            </ul>
+            <ul class="footer-items">
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Ayuda</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Descrubre cómo funciona trivago</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Términos y condiciones</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Información legal</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Política de privacidad</a>
+                </li>
+                <li class="footer-list">
+                    <a href="#" target="_blank" class="footer-link">Mapa del sitio</a>
+                </li>
+            </ul>
 
-        <!-- Copyright -->
-        <div style="background-color: rgb(68, 98, 116);" class="footer-copyright text-center py-3">© Copyright 2019
-            trivago | Todos los derechos reservados
         </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
+        
+        <div class="footer-logo-copyright">
+            <div  id= "logo-footer">
+                 <img src="img/logo-footer" alt="logo.footer">
+            </div>
+            <div class="copyright-footer">
+                    Copyright 2019 trivago | Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>  
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
