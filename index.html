@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>trivago.com - Compara precios de hoteles en todo el mundo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="main.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
+    <link rel="stylesheet" href="css/custom.css">
     <style> 
 
     .search-bar-icon{
@@ -146,8 +147,57 @@
                         </li>
                     </ul>
                 </div>
+                
                 <div class="opt-hoteles">
-
+                        <div class="destinations" id="destinations">
+                                    <!-- <ul class="list-des">
+                                        <li class="destinos">
+                                            <a href="#" class="link-hoteles">
+                                                <div class="destinos-ciudades">
+                                                </div>
+                                                <div class="hoteles-en">Hoteles en Montreal</div>
+                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
+                                            </a>
+                                        </li>
+                                        <li class="destinos" >
+                                            <a href="#" class="link-hoteles" >
+                                                <div class="destinos-ciudades"></div>
+                                                <div class="hoteles-en">Hoteles en Montreal</div>
+                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
+                                            </a>
+                                        </li>
+                                        <li class="destinos">
+                                            <a href="#" class="link-hoteles" >
+                                                <div class="destinos-ciudades"></div>
+                                                <div class="hoteles-en">Hoteles en Montreal</div>
+                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
+                                            </a>
+                                        </li>
+                                        <li class="destinos">
+                                            <a href="#" class="link-hoteles" >
+                                                <div class="destinos-ciudades"></div>
+                                                <div class="hoteles-en">Hoteles en Montreal</div>
+                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
+                                            </a>
+                                        </li> -->
+                            </div>
+                    <div class="slider-control">
+                        <button type="button" class="arrow-slider">
+                                <i class="fas fa-angle-left"></i>
+                        </button>
+                        <button class="dot-slider" type="button" >
+                                <i class="fas fa-circle"></i>
+                        </button>
+                        <button class="dot-slider" type="button" >
+                                <i class="fas fa-circle"></i>
+                        </button>
+                        <button class="dot-slider" type="button" >
+                                <i class="fas fa-circle"></i>
+                        </button>
+                        <button type="button" class="arrow-slider">
+                                <i class="fas fa-angle-right"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="informacion-tri">
                     <div class="parrafo-info">
@@ -174,8 +224,128 @@
                             trivago es el buscador de hoteles ideal para comparar entre una gran variedad de precios de numerosos hoteles y sitios web de reservaciones. Esto significa que decides en trivago qué hotel se ajusta más a tus necesidades y luego formalizas tu reservación en la página de la oferta que elijas, que está enlazada a nuestro buscador de hoteles. Por lo tanto, cuando hagas clic en el botón «Ver oferta», te redirigiremos a la página correspondiente para que reserves allí la oferta hotelera que hayas encontrado en trivago. <br>
                             <br>
                             ¡Deja que trivago te ayude a encontrar el precio que buscas en más de 400 sitios web de reservaciones!
+                            <br>
+                            <br>
                         </p>
                     </div>
+                    <div>
+                        <section class="top-cities-section" style="float: left;">
+                            <h3 class="h3-tri">Más ciudades destacadas</h3>
+                            <ul class="top-cities">
+                                <li class="cities"><a class="link-cities" href="#">Venecia</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Sevilla</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Nueva York</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Lhasa</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Rio de Janeiro</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Londres</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Marrakech</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Petra</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Roma</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Varanasi</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Florencia</a></li>
+                                <li class="cities"><a class="link-cities" href="#">La Habana</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Verona</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Kyoto</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Jerusalén</a></li>
+                                <li class="cities"><a class="link-cities" href="#">París</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Beijing</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Lalibela</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Granada</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Atenas</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Bagan</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Katmandú</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Ciudad del Vaticano</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Lisboa</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Tokio</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Estambul</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Hoi An</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Ámsterdam</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Luxor</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Berlín</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Jaipur</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Lyon</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Oia</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Siem Reap</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Viena</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Cuzco</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Cartagena</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Buenos Aires</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Zanzíbar</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Ciudad de México</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Singapur</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Las Vegas</a></li>
+                                <li class="cities"><a class="link-cities" href="#">San Francisco</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Sydney</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Mont Saint Michel</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Dubrovnik</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Bangkok</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Antigua Guatemala</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Praga</a></li>
+                                <li class="cities"><a class="link-cities" href="#">Budapest</a></li>
+                            </ul>
+                         </section>
+                        <section class="trivago-inter-section" style="float: left;">
+                        <h3 class="h3-tri">trivago internacional</h3>
+                        <ul class="trivago-inter">
+                            <li class="internacional"><a href="#" class="link-trivago-inter">العالم العربي trivago</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Australia</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Argentina</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago България</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago België</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Brasil</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Canada</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Česko</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Chile</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Colombia</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Danmark</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Deutchland</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ecuador</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ελλάδα</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago España</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago France</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 한국</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Hrvatska</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago India</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Indonesia</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ireland</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Italia</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Magyarország</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Malaysia</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Mexico</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Nederland</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago New Zealand</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Norge</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Österreich</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Perú</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Philippines</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Polska</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Portugal</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago ประเทศไทย</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 日本</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago România</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Россия</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Schweiz</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Singapore</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Slovenija</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Slovensko</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago South Africa</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Srbija</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Suomi</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Sverige</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 台灣</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Türkey</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago UAE</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago United Kingdom</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Uruguay</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago USA</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Việt Nam</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 香港</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago ישראל</a></li>
+                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 中国</a></li>
+                        </ul>
+                    </section>
+                    </div>
+                
                 </div>
 
             </div>
@@ -372,6 +542,5 @@
                 </div>
             </div>
         </footer>   
-    
+    <script src="js/controlador.js"></script>
 </body>
-<

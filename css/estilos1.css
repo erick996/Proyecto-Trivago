@@ -206,12 +206,53 @@
     border-bottom-width: 1px;
 }
 
-.informacion-tri{
-    width: 1100px;
-}
-
 .opt-hoteles{
     height: 424px;
+}
+
+.slider-control{
+    margin: 0px 486px;
+}
+
+.destinos-ciudades{
+    width: 258px;
+    height: 258px;
+    background: black;
+    margin: 6.85px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list-des{
+    display: inline-block;
+    padding: 0px;
+}
+
+.destinos{
+ display: inline-block
+}
+
+.link-hoteles{
+    color: black;
+}
+
+.link-hoteles:hover{
+    color: black;
+    border-bottom-width: 5px;
+}
+
+
+.hoteles-en{
+    font-weight: bold;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 7px;
+}
+
+.hoteles-promos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0px 7px;
 }
 
 .parrafo-info{
@@ -220,26 +261,35 @@
     display: inline-table;
 }
 
-@media only screen and (min-width: 720px)
-    .parrafo-info{
-        width: 50%;
-        float: left;
-    }
+@media only screen and (max-width: 720px){
 
-@media only screen and (min-width: 920px)
+    .parrafo-info{
+        width: 100%;
+        float: left;
+ }
+}
+
+
+@media only screen and (min-width: 920px){
     .h3{
         font-size: 20;
     }
 
+}
 
-.h3{
+.h3, .h3-tri{
     color: #007FAD;
     font-size:20px !important;
-    font-weight: 700 !important;
+    font-weight: bold !important;
     margin-top: 16px;
     margin-bottom: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
+}
+
+.h3-tri{
+box-sizing: border-box;
+width: 500px;
 }
 
 .texto{
@@ -249,6 +299,54 @@
    margin-bottom: 16px;
    width: 529px;
    line-height: 1.5;
+}
+
+.link-cities, .link-trivago-inter{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.link-cities:hover, .link-trivago-inter:hover{
+    text-decoration-color: black;
+    color: black;
+}
+
+.cities, .internacional{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1;
+}
+
+.top-cities, .trivago-inter{
+width: 533px;
+height: 132px;
+overflow: auto;
+text-overflow: ellipsis;
+padding: 0px;
+}
+
+.trivago-inter-section, .top-cities-section{
+    float:left;
+    padding: 0px 8px;
+}
+
+
+
+@media only screen and (min-width: 980px){
+    .cities, .link-cities{
+        width: 32%;
+    }
+
+    .internacional, .link-trivago-inter{
+        width: 30%;
+    }
 }
 
 #logo-footer{
@@ -272,19 +370,14 @@
     font-size: 0.75em;
 }
 
-
-
-
 #footer{
     background: #293339;
-    width: 100%; 
-    height: 531px; 
     padding-top: 32px; 
 
 }
 
 .footer-registro-email{
-    width: 948px; 
+    width: 980px; 
     height: 78px; 
     padding: 0px 16px; 
     margin:0px auto 32px auto;
@@ -330,8 +423,8 @@
 }
 
 .email-promos{
-width: 335px;
-height: 42px;
+width: 361px;
+height: 44px;
 margin-bottom: 32px;
 padding: 0px 12px;
 border-width: 1px;
@@ -438,7 +531,7 @@ outline-offset: -3px;
 }
 
 .footer-items{
-    width: 294.6px;
+    width: 326.5px;
     height: 132px;
     padding: 0px 16px;
     margin-bottom: 32px;
@@ -457,13 +550,13 @@ outline-offset: -3px;
 
 .footer-link{
     text-decoration: none;
-    color: inherit;
+    color: white;
     cursor: pointer;
 }
 
 .footer-link:hover{
     text-decoration: underline;
-
+    color: white;
 }
 
 .footer-country{
@@ -479,6 +572,7 @@ outline-offset: -3px;
     width: 294px;
     height: 44px;
     background-color: #293339;
+    float: right;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -495,7 +589,6 @@ outline-offset: -3px;
 }
     
 .footer-logo-copyright{
-    height: 55px; 
     padding:32px; 
     background: #37454D;
 }
