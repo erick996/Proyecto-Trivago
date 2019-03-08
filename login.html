@@ -10,22 +10,33 @@
 
 </head>
 <body>
-        <header class="siteheader">
+        <header class="header">
                 <img id="logo" src="img/trivago.svg">
         </header>
         <main>
-              <div id="login">
-                        <h1>Inicia sesión con tu email</h1>
-                        <h1>Email</h1>
-                        <input class="caja-texto" type="text" placeholder="Email"><br>
-                        <h1>Contraseña</h1>
-                        <input class="caja-texto" type="password" placeholder="Contraseña"><br>
-                        <input id="enviar" type="button" value="Iniciar sesión"><br>
-                        <label><input type="checkbox">Mostrar contraseña</label><br>
-                <p>¿No tienes una cuenta?<a href="#">Registrarse.</a></p>
+              <div id="login" class="caja">                       
+                        <h1 class="textsub">Inicia sesión con tu email</h1>                              
+                        <h2 id="email" class="textmed">Email</h2>                        
+                        <input type="text" placeholder="Email"><br>                
+                        <h2 id="password" class="textmed">Contraseña <a id="olvido" href="forgot-password.html">¿Olvidaste tu contraseña?</a></h2>
+                        <input type="password" placeholder="Contraseña">
+                        <div id="checkbox">
+                             <input type="checkbox">Mostrar contraseña<br>
+                        </div>                        
+                        <button class="enviar" type="submit" >Iniciar sesión</button><br>
+                        <div id="cuenta">
+                             <span >¿No tienes una cuenta?<a href="register.html">Registrarse.</a></span><br>
+                        </div>
+                        <span class="textsub">También puedes acceder con:</span><br>
+                        <button type="button"><a href="#">Facebook</a></button>
+                        <button type="button"><a href="#"> <link rel="shortcut icon" type="image/icon" href="img/favicon.ico"/>Google</a ></button>
+                        <p class="footnote">No publicaremos nada en tu Facebook o Google+ sin consultarte primero.</p>                                               </p>  
+                 </div>
 
-              </div>
-       </main>
+        </main>
+        <footer>
+              
+        </footer>
 </body>
 
 </html>
