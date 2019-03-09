@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" href="css/custom1.css">
     <style> 
 
     .search-bar-icon{
@@ -139,65 +139,54 @@
                 <h2 class="body-title">¿No sabes dónde ir? Déjanos inspirarte</h2>
                 <div class="body-categories">
                     <ul class="categories" role="tablelist">
-                        <li role="tab" class="btn-list">
+                        <li role="tab" class="btn-list" onclick="tabbtn();">
                             <button type="button" class="categories-btn">Ciudades destacadas</button>
                         </li>
-                        <li role="tab" class="btn-list">
+                        <li role="tab" class="btn-list" onclick="tabbtn1();">
                             <button type="buttom" class="categories-btn">Destinos Populares</button>
                         </li>
                     </ul>
                 </div>
-                
                 <div class="opt-hoteles">
                         <div class="destinations" id="destinations">
-                                    <!-- <ul class="list-des">
-                                        <li class="destinos">
-                                            <a href="#" class="link-hoteles">
-                                                <div class="destinos-ciudades">
-                                                </div>
-                                                <div class="hoteles-en">Hoteles en Montreal</div>
-                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
-                                            </a>
-                                        </li>
-                                        <li class="destinos" >
-                                            <a href="#" class="link-hoteles" >
-                                                <div class="destinos-ciudades"></div>
-                                                <div class="hoteles-en">Hoteles en Montreal</div>
-                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
-                                            </a>
-                                        </li>
-                                        <li class="destinos">
-                                            <a href="#" class="link-hoteles" >
-                                                <div class="destinos-ciudades"></div>
-                                                <div class="hoteles-en">Hoteles en Montreal</div>
-                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
-                                            </a>
-                                        </li>
-                                        <li class="destinos">
-                                            <a href="#" class="link-hoteles" >
-                                                <div class="destinos-ciudades"></div>
-                                                <div class="hoteles-en">Hoteles en Montreal</div>
-                                                <div class="hoteles-promos">12563 hoteles <strong>Prom.</strong> $1534 </div>
-                                            </a>
-                                        </li> -->
                             </div>
-                    <div class="slider-control">
-                        <button type="button" class="arrow-slider">
+                        <div class="slider-control" id="destinations-btn">
+                                <button  id="arrow-left" type="button" class="arrow-slider arrow-slider-unactive">
+                                        <i class="fas fa-angle-left"></i>
+                                </button>
+                                <button id="dot-slider1" class="dot-slider dot-slider-active" type="button" onclick="slide1();" >
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider2" class="dot-slider" type="button" onclick="slide2();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider3" class="dot-slider" type="button" onclick="slide3();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button  id="arrow-right" type="button" class="arrow-slider"  onclick="slide2();">
+                                        <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        <div class="destinations" id="destacados" style="display: none">
+                            </div>
+                    <div class="slider-control" id="destacados-btn" style="display: none">
+                        <button  id="arrow-left-1" type="button" class="arrow-slider arrow-slider-unactive">
                                 <i class="fas fa-angle-left"></i>
                         </button>
-                        <button class="dot-slider" type="button" >
+                        <button id="dot-slider4" class="dot-slider dot-slider-active" type="button" onclick="slide4();" >
                                 <i class="fas fa-circle"></i>
                         </button>
-                        <button class="dot-slider" type="button" >
+                        <button id="dot-slider5" class="dot-slider" type="button" onclick="slide5();">
                                 <i class="fas fa-circle"></i>
                         </button>
-                        <button class="dot-slider" type="button" >
+                        <button id="dot-slider6" class="dot-slider" type="button" onclick="slide6();">
                                 <i class="fas fa-circle"></i>
                         </button>
-                        <button type="button" class="arrow-slider">
+                        <button  id="arrow-right-1" type="button" class="arrow-slider"  onclick="slide5();">
                                 <i class="fas fa-angle-right"></i>
                         </button>
                     </div>
+                    
                 </div>
                 <div class="informacion-tri">
                     <div class="parrafo-info">
@@ -542,5 +531,5 @@
                 </div>
             </div>
         </footer>   
-    <script src="js/controlador.js"></script>
+    <script src="js/controlador1.js"></script>
 </body>
