@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
     <link rel="stylesheet" href="css/custom1.css">
     <style> 
 
@@ -25,7 +25,7 @@
     </style>
 
 </head>
-<body id="body">
+<body id="body" >
     <div class="header-botones">
         <header>
             <div style="width: 347.9px; height:64px; margin-left:auto">
@@ -89,7 +89,7 @@
                             <option class="option" value="TRY">TRY - Lira turca</option>
                             <option class="option" value="TWD">TWD - Dólar taiwanés</option>
                             <option class="option" value="UAH">UAH - Grivna ucraniana</option>
-                            <option class="option" value="USD">USD - Dólar EE. UU.</option>
+                            <option class="option" value="USD" selected>USD - Dólar EE. UU.</option>
                             <option class="option" value="UYU">UYU - Peso uruguayo</option>
                             <option class="option" value="VND">VND - Dong vietnamita</option>
                             <option class="option" value="ZAR">ZAR - Rand sudafricano</option>
@@ -97,9 +97,18 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="menu-button">
+                <div class="menu-button" style="width:65px; margin: 0px;">
                     <input id="idioma-btn" class="menu-btn" type="button" value="ES"> 
-                    </select>
+                    <div id="idioma-option" class="popover-div popover-custom" style="display: none">
+                        <section class="popover">
+                            <section class="menu-idioma">
+                            <ul class="menu-list">
+                                <li class="menu-item">EN - English</li>
+                                <li class="menu-item">ES - Español</li>
+                            </ul>
+                        </section>
+                        </section>
+                    </div>
                 </div>
                 <div class="menu-button">
                     <input  class="menu-btn" type="button" value="Registrarse"; style="width: 103.59px;">
@@ -123,6 +132,24 @@
             <form class="busqueda">
                  <div class="searchingbar">
                     <input type="text" placeholder="Ej.: Islas de la Bahía" class="search-bar search-bar-icon">
+                    <div id="essentials">
+                            <div class="calendar">
+                                <label class="uselessLabel" for="checkin"></label>
+                                <input class="essentials" id="checkin" type="date" title="Seleccione fecha de registro" name="date"
+                                    min="2018-12-01" max="2019-12-31" required>
+                                <label class="uselessLabel" for="checkout"></label>
+                                <input class="essentials" id="checkout" type="date" title="Selecione fecha de salida" name="date"
+                                    min="2018-12-01" max="2019-12-31" required>
+                            </div>
+                            <div>
+                                <label class="uselessLabel" for="rooms"></label>
+                                <select class="essentials" name="rooms" id="rooms">
+                                    <option value="single"> 🙂 Habitacion individual</option>
+                                    <option value="double"> 👫 Habitacion doble</option>
+                                    <option value="family" selected> 👪 Familiar</option>
+                                </select>
+                            </div>
+                        </div>
                     <div class="search-btn">
                             <button type="button" class="buscar-btn">
                                 <span>Buscar</span>
@@ -139,11 +166,11 @@
                 <h2 class="body-title">¿No sabes dónde ir? Déjanos inspirarte</h2>
                 <div class="body-categories">
                     <ul class="categories" role="tablelist">
-                        <li role="tab" class="btn-list" onclick="tabbtn();">
-                            <button type="button" class="categories-btn">Ciudades destacadas</button>
+                        <li role="tab" class="btn-list">
+                            <button id="tabbtn" type="button" class="categories-btn btn-list-active">Ciudades destacadas</button>
                         </li>
-                        <li role="tab" class="btn-list" onclick="tabbtn1();">
-                            <button type="buttom" class="categories-btn">Destinos Populares</button>
+                        <li role="tab" class="btn-list">
+                            <button id="tabbtn1" type="buttom" class="categories-btn">Destinos Populares</button>
                         </li>
                     </ul>
                 </div>
@@ -192,19 +219,19 @@
                     <div class="parrafo-info">
                         <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
                         <p class="texto">
-                            El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Además, te aportamos información útil para viajar a ciudades como Cancún o Ciudad de México. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo. Si buscas ideas para tu próxima aventura, recuerda que Guadalajara y sus alrededores son una excelente opción para viajes de una semana o más, y en nuestro buscador encontrarás una gran cantidad de hoteles disponibles.
+                            El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo.
                         </p>
                     </div>
                     <div class="parrafo-info">
                         <h3 class="h3">Encuentra hoteles baratos en trivago</h3>
                         <p class="texto">
-                            Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet. Te ofrecemos la posibilidad de elegir entre una gran variedad de habitaciones en destinos de México como Monterrey y Los Cabos, así como también en ciudades y destinos vacacionales en el extranjero.
+                            Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet. 
                         </p>
                     </div>
                     <div class="parrafo-info">
                         <h3 class="h3">Las opiniones de otros usuarios de ayudarán a encontrar tu hotel ideal</h3>
                         <p class="texto">
-                            Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Puerto Vallarta y encontrar tu hotel ideal.
+                            Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Islas de la Bahía y encontrar tu hotel ideal.
                         </p>
                     </div>
                     <div class="parrafo-info">
@@ -457,7 +484,7 @@
                         <option value="ae" class="country-options">UAE</option>
                         <option value="uk" class="country-options">United Kingdom</option>
                         <option value="uy" class="country-options">Uruguay</option>
-                        <option value="us" class="country-options">USA</option>
+                        <option value="us" class="country-options" selected>USA</option>
                         <option value="vn" class="country-options">Việt Nam</option>
                         <option value="hk" class="country-options">香港</option>
                         <option value="il" class="country-options">ישראל</option>
@@ -531,5 +558,8 @@
                 </div>
             </div>
         </footer>   
-    <script src="js/controlador1.js"></script>
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/controlador.js"></script>
+    
+    
 </body>
