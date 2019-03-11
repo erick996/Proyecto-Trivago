@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?xf1i2p');
+  src:  url('icomoon.eot?xf1i2p#iefix') format('embedded-opentype'),
+  url('icomoon.ttf?xf1i2p') format('truetype'),
+  url('icomoon.woff?xf1i2p') format('woff'),
+  url('icomoon.svg?xf1i2p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user-plus:before {
+  content: "\e900";
+  
+}
+.icon-redo:before {
+  content: "\e966";
+}
+.icon-lock1:before {
+  content: "\e901";
+  
+    
+    
+}
+.icon-lock1, .icon-redo, .icon-user-plus{
+  color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  font-size: large;
+}
