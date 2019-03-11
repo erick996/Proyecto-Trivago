@@ -1,13 +1,222 @@
-.dot-slider{
-    border: 0px;
-    background: transparent;
-    font-size: 12px;
-    color: #CDD0D2;
+html {
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+    color: #37454d;
+}
+body{
+    background-color:rgb(235, 236, 237);
+    margin: 0px;
+
 }
 
-.arrow-slider{
-    border: 0px;
-    background: transparent;
-    font-size: 13px;
-    color: #CDD0D2;
+
+.header {
+    position: relative;
+    padding:0;
+    width: 100%;   
+    height: 64px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
 }
+ 
+#logo {
+    display: block;
+    height: 32px;
+    width: 110px;
+    margin: auto;
+    position: static;
+    padding-top: 17px;
+    align-self: center;
+    margin: auto;
+    
+}
+
+.caja{
+    background-color: white;    
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    padding: 12px;
+    margin-left: auto;
+    margin-right:auto;
+}
+ .login, #register{
+    width: 296px;
+    height: 544px;
+ }
+ #register{
+     height: 584px;
+ }
+
+ .h1, h2{
+    font-family: inherit;
+    
+}
+.textmed {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+}
+    
+.textsub{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 16px 0;
+
+ 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #007fad;
+}
+input[type="text"], input[type="password"] {    
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+    color: #37454d;
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    background: transparent;
+    display: block;
+    /* font: inherit; */
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 12px;
+    text-align: left;
+}
+
+#checkbox{
+   margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 28px;
+    margin-left: 0px;
+}
+
+
+
+#cuenta{
+    margin-bottom: 32px;
+    line-height: 1.5;
+    margin: 16px 0;
+    
+}
+
+.enviar{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;    
+    background-color: #007fad;
+    border: 1px solid #007fad;
+    border-bottom: 1px solid #005f81;                
+    min-height: 44px;
+    position: relative;
+    width: 100%;
+    padding: 0 44px;
+    margin: 4px 0;
+ 
+        
+    
+
+}
+.enviar:hover{
+    background-color: #005F81
+   }
+
+h2 a{
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-left: 30px;
+    
+}
+.footnote{
+    color: #9ba2a6;
+    font-size: 14px;
+
+}
+span a{
+    position: relative;
+    left:5px;
+}
+
+.barra{
+   
+    background-color: transparent;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+    color: #37454d;
+    font-size: 16px;
+    height: 44px;
+    width: 100%;
+    padding: 0 12px;
+    text-align: left;
+    background: transparent;
+    display: block;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+}
+.boton{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #697379;   
+    width: 130px;
+    height: 46px;
+    margin: 0px;
+    left: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+      }
+.boton:hover, .botontext:hover{
+    background-color: #697379;
+    text-decoration: none;
+    color: white;
+   
+}
+
+.botontext{
+
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16PX;
+    margin-left: 46px;
+    text-transform: none;
+    color: #37454d;
+    text-align: center;
+    white-space: nowrap;
+    right: 10px;
+    
+    
+}
+
+  
+
+/* FORGOR PASSWORD - ESTILOS */
+p{
+    line-height: 1.5;
+}
+
+#forgot{
+    width: 296px;
+    height: 322px;
+
+}
+
+
