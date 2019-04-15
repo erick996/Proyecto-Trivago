@@ -1,6 +1,81 @@
 $(document).ready(function() {
-
-    // Define search variable
+    $.ajax({
+        url:"ajax/hoteles.php",
+        dataType:"json",
+        success:function(respuesta){
+            console.log(respuesta);
+            for(var i=0;i<respuesta.length;i++){
+                $("#hotels").append(` <div class="hotel">
+                <section class="hotelBasic">
+                    <div id="carousel${respuesta[i].codigoHotel}" class="carousel slide carousel-fade" data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 image" src="${respuesta[i].img1}" alt="Hotel Paradise Beach">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 image" src="${respuesta[i].img2}" alt="Hotel Paradise Beach">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 image" src="${respuesta[i].img3}" alt="Hotel Paradise Beach">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 image" src="${respuesta[i].img4}" alt="Hotel Paradise Beach">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel${respuesta[i].codigoHotel}" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel${respuesta[i].codigoHotel}" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <span class="heart">🖤</span>
+                    <span class="range">1 / 4</span>
+                    <section class="hotelInfo">
+                        <span class="hotelName">${respuesta[i].nombreHotel}</span>
+                        <span class="stars">⭐⭐⭐⭐⭐ <span class="hotelText">${respuesta[i].tipo}</span></span>
+                        <span class="hotelLocation">${respuesta[i].localizacion}</span>
+                        <span class="rates"><span class="rateNumber">${respuesta[i].calificacionNumerica}</span><span
+                                class="rateText">${respuesta[i].calificacion}</span><span class="reviewsCount">${respuesta[i].opiniones}</span></span>
+                        <span class="rateExtra">${respuesta[i].calificacionTotal}</span>
+                    </section>
+                </section>
+                <section class="hotelOther">
+                    <div class="offer btn btn-primary">
+                        <span class="site">${respuesta[i].agencia1}</span><br />
+                        <span class="otherSitePrice">${respuesta[i].precio1}</span>
+                    </div>
+                    <div class="offer btn btn-primary">
+                        <span class="site">${respuesta[i].agencia2}</span><br />
+                        <span class="otherSitePrice">${respuesta[i].precio2}</span>
+                    </div>
+                    <div class="offer btn btn-primary">
+                        <span class="site">${respuesta[i].agencia3}</span><br />
+                        <span class="otherSitePrice">${respuesta[i].precio3}</span>
+                    </div>
+                    <div class="moreDeals btn btn-primary">
+                        <span class="moreDealsText">${respuesta[i].masOfertas}</span>
+                    </div>
+                </section>
+                <section class="hotelFinal">
+                    <div class="previousExpensive">
+                        <div class="previousExpensiveSite">${respuesta[i].agencia1}</div>
+                        <div class="previousExpensivePrice">${respuesta[i].precio1}</div>
+                    </div>
+                    <div class="websiteOffer">
+                        <div class="websiteOfferHotel">${respuesta[i].agencia2}</div>
+                        <div class="websiteOfferPrice">${respuesta[i].precio2}</div>
+                        <span class="nights">1 noche por <span class="nightsPrice">${respuesta[i].precio1}</span></span>
+                        <button class="breakfast btn btn-primary">Desayuno gratis</button>
+                    </div>
+                    <section class="deal">
+                        <a href="#"><button class="viewDeal btn btn-primary" title="Ver oferta">Ver oferta</button></a>
+                    </section>
+                </section>
+            </div>`);
+              // Define search variable
     const search = $("#search");
 
     // Remove previous search value when focus
@@ -33,8 +108,7 @@ $(document).ready(function() {
 
     today();
     tomorrow();
-
-    let days;
+let days;
 
     function rates() {
         let date1 = new Date(checkin.val());
@@ -71,6 +145,7 @@ $(document).ready(function() {
         rates();
     });
 
+    
     // Price slider "revitalization"
     const rangeFrom = $("#price");
     const rangeTo = $(".maxPrice");
@@ -157,4 +232,11 @@ $(document).ready(function() {
         $(this).addClass("moreDealsPressed");
         $(this).children(".moreDealsText").addClass("site1");
     });
+            }
+        },
+        error:function(error){
+            console.log(error);
+        }
+    });
+
 });
