@@ -363,7 +363,7 @@ label {
     width: 49%;
 }
 
-#carousel1, #carousel2, #carousel3, #carousel4, #carousel5{
+#carousel1, #carousel2, #carousel3, #carousel4, #carousel5, #carousel6, #carousel7, #carousel8, #carousel9, #carousel10{
     position: relative;
     width: 180px;
     height: 180px;
@@ -1055,7 +1055,7 @@ outline-offset: -3px;
         color: #37454D;
         margin-top: 3px;
     }
-    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5{
+    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5,#carousel6, #carousel7, #carousel8, #carousel9, #carousel10{
         position: relative;
         width: 160px;
         height: 90px;
@@ -1238,7 +1238,7 @@ outline-offset: -3px;
         width: 60%;
         left: 36px;
     }
-    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5{
+    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5,#carousel6, #carousel7, #carousel8, #carousel9, #carousel10{
         position: relative;
         width: 100px;
         height: 180px;
@@ -1395,7 +1395,7 @@ outline-offset: -3px;
         color: #37454D;
         margin-top: 3px;
     }
-    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5{
+    #carousel1, #carousel2, #carousel3, #carousel4, #carousel5,#carousel6, #carousel7, #carousel8, #carousel9, #carousel10{
         position: relative;
         width: 50px;
         height: 90px;

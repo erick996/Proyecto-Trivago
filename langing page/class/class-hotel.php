@@ -187,7 +187,17 @@ class Hotel{
         fclose($archivo);
         return json_encode($respuesta);
     }
-    
+    public static function obtenerListas($codigoLocalizacion){
+        $registros = json_decode(file_get_contents("../data/hoteles1.json"),true);
+        $resultado = array();
+        for ($i=0;$i<count($registros);$i++){
+                if ($registros[$i]["codigoLocalizacion"]==$codigoLocalizacion){
+                        $resultado[] = $registros[$i];
+                }
+        }
+        $registros = null;
+        return json_encode($resultado);
+}
 }
 
 ?>
