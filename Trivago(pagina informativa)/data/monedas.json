@@ -1,0 +1,59 @@
+{"nombre":"EUR - Euro","value": "EUR","principal":"true"}
+{"nombre":"GBP - Libra Esterlina","value": "GBP","principal":"true"}
+{"nombre":"USD - Dólar EE. UU","value": "USD","principal":"true"}
+{"nombre":"AED - Dírham de los EAU","value": "AED","principal":"false"}
+{"nombre":"ARS - Peso argentino","value": "ARS","principal":"false"}
+{"nombre":"AUD - Dólar Australiano","value": "AUD","principal":"false"}
+{"nombre":"AZN - Manat azerbaiyano","value": "AZN","principal":"false"}
+{"nombre":"BGN - Lev búlgaro","value": "BGN","principal":"false"}
+{"nombre":"BHD - Dinar Bareiní","value": "BHD","principal":"false"}
+{"nombre":"BRL - Real brasileño","value": "BRL","principal":"false"}
+{"nombre":"CAD - Dólar canadiense","value": "CAD","principal":"false"}
+{"nombre":"CHF - Franco suizo","value": "CHF","principal":"false"}
+{"nombre":"CLP - Peso chileno","value": "CLP","principal":"false"}
+{"nombre":"CNY - Yuan chino","value": "CNY","principal":"false"}
+{"nombre":"COP - Peso colombiano","value": "COP","principal":"false"}
+{"nombre":"CZK - Corona checa","value": "CZK","principal":"false"}
+{"nombre":"DKK - Corona danesa","value": "DKK","principal":"false"}
+{"nombre":"DZD - Dinar argelino","value": "DZD","principal":"false"}
+{"nombre":"EGP - Libre egipcia","value": "EGP","principal":"false"}
+{"nombre":"EUR - Euro","value": "EUR","principal":"false"}
+{"nombre":"GBP - Libra esterlina","value": "GBP","principal":"false"}
+{"nombre":"HKD - Dólar de hong kong","value": "HKD","principal":"false"}
+{"nombre":"HRK - Kuna croata","value": "HRK","principal":"false"}
+{"nombre":"HUF - Florín hungaro","value": "HUF","principal":"false"}
+{"nombre":"IDR - Rupia indonesia","value": "IDR","principal":"false"}
+{"nombre":"ILS - Shequel israelí","value": "ILS","principal":"false"}
+{"nombre":"INR - Rupa india","value": "INR","principal":"false"}
+{"nombre":"JPY - Yen japonés","value": "JPY","principal":"false"}
+{"nombre":"KRW - Won surcoreano","value": "KRW","principal":"false"}
+{"nombre":"KWD - Dinar kuwaití","value": "KWD","principal":"false"}
+{"nombre":"KZT - Tenge kazajo","value": "KZT","principal":"false"}
+{"nombre":"LBP - Libra libanesa","value": "LBP","principal":"false"}
+{"nombre":"MAD - Dírham marroquí","value": "MAD","principal":"false"}
+{"nombre":"MDL - Leu moldavo","value": "MDL","principal":"false"}
+{"nombre":"MXN - Peso mexicano","value": "MXN","principal":"false"}
+{"nombre":"MYR - Ringgit malayo","value": "MYR","principal":"false"}
+{"nombre":"NGN - Naira nigeriano","value": "NGN","principal":"false"}
+{"nombre":"NOK - Corona noruega","value": "NOK","principal":"false"}
+{"nombre":"NZD - Dólar neozelandés","value": "NZD","principal":"false"}
+{"nombre":"OMR - Rial omaní","value": "OMR","principal":"false"}
+{"nombre":"PEN - Nuevo sol peruano","value": "PEN","principal":"false"}
+{"nombre":"PHP - Peso filipino","value": "PHP","principal":"false"}
+{"nombre":"PLN - Zloty polaco","value": "PLN","principal":"false"}
+{"nombre":"QAR - Riyal qatarí","value": "QAR","principal":"false"}
+{"nombre":"RON - Leu romano","value": "RON","principal":"false"}
+{"nombre":"RSD - Dinar serbio","value": "RSD","principal":"false"}
+{"nombre":"RUB - Rublo ruso","value": "RUB","principal":"false"}
+{"nombre":"SAR - Riyal saudí","value": "SAR","principal":"false"}
+{"nombre":"SEK - Corona sueca","value": "SEK","principal":"false"}
+{"nombre":"SGD - Dólar singapurense","value": "SGD","principal":"false"}
+{"nombre":"THB - Baht tailandés","value": "THB","principal":"false"}
+{"nombre":"TND - Dinar tunecino","value": "TND","principal":"false"}
+{"nombre":"TRY - Lira turca","value": "TRY","principal":"false"}
+{"nombre":"TWD - Dólar taiwanés","value": "TWD","principal":"false"}
+{"nombre":"UAH - Grivna ucraniana","value": "UAH","principal":"false"}
+{"nombre":"USD - Dólar EE. UU.","value": "USD","principal":"false"}
+{"nombre":"UYU - Peso uruguayo","value": "UYU","principal":"false"}
+{"nombre":"VND - Dong vietnamita","value": "VND","principal":"false"}
+{"nombre":"ZAR - Rand sudafricano","value": "ZAR","principal":"false"}

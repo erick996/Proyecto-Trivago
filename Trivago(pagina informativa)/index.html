@@ -18,68 +18,10 @@
             <div style="width: 347.9px; height:64px; margin-left:auto">
                 <div class="menu-button">
                     <select name="moneda-btn" id="moneda-btn" class="menu-btn" >
-                        <optgroup label="Principales monedas" class="option">
-                            <option class="option" value="EUR">EUR - Euro</option>
-                            <option class="option" value="GBP">GBP - Libra Esterlina </option>
-                            <option class="option" value="USD">USD - Dólar EE. UU</option>
+                        <optgroup label="Principales monedas" class="option" id="moneda-principal">
+                            
                         </optgroup>
-                        <optgroup label="Todas las monedas" class="option">
-                            <option class="option" value="AED">AED - Dírham de los EAU</option>
-                            <option class="option" value="ARS">ARS - Peso argentino</option>
-                            <option class="option" value="AUD">AUD - Dólar Australiano</option>
-                            <option class="option" value="AZN">AZN - Manat azerbaiyano</option>
-                            <option class="option" value="BGN">BGN - Lev búlgaro</option>
-                            <option class="option" value="BHD">BHD - Dinar Bareiní</option>
-                            <option class="option" value="BRL">BRL - Real brasileño</option>
-                            <option class="option" value="CAD">CAD - Dólar canadiense</option>
-                            <option class="option" value="CHF">CHF - Franco suizo</option>
-                            <option class="option" value="CLP">CLP - Peso chileno</option>
-                            <option class="option" value="CNY">CNY - Yuan chino</option>
-                            <option class="option" value="COP">COP - Peso colombiano</option>
-                            <option class="option" value="CZK">CZK - Corona checa</option>
-                            <option class="option" value="DKK">DKK - Corona danesa</option>
-                            <option class="option" value="DZD">DZD - Dinar argelino</option>
-                            <option class="option" value="EGP">EGP - Libre egipcia</option>
-                            <option class="option" value="EUR">EUR - Euro</option>
-                            <option class="option" value="GBP">GBP - Libra esterlina</option>
-                            <option class="option" value="HKD">HKD - Dólar de hong kong</option>
-                            <option class="option" value="HRK">HRK - Kuna croata</option>
-                            <option class="option" value="HUF">HUF - Florín hungaro</option>
-                            <option class="option" value="IDR">IDR - Rupia indonesia</option>
-                            <option class="option" value="ILS">ILS - Shequel israelí</option>
-                            <option class="option" value="INR">INR - Rupa india</option>
-                            <option class="option" value="JPY">JPY - Yen japonés</option>
-                            <option class="option" value="KRW">KRW - Won surcoreano</option>
-                            <option class="option" value="KWD">KWD - Dinar kuwaití</option>
-                            <option class="option" value="KZT">KZT - Tenge kazajo</option>
-                            <option class="option" value="LBP">LBP - Libra libanesa</option>
-                            <option class="option" value="MAD">MAD - Dírham marroquí</option>
-                            <option class="option" value="MDL">MDL - Leu moldavo</option>
-                            <option class="option" value="MXN">MXN - Peso mexicano </option>
-                            <option class="option" value="MYR">MYR - Ringgit malayo</option>
-                            <option class="option" value="NGN">NGN - Naira nigeriano</option>
-                            <option class="option" value="NOK">NOK - Corona noruega</option>
-                            <option class="option" value="NZD">NZD - Dólar neozelandés</option>
-                            <option class="option" value="OMR">OMR - Rial omaní</option>
-                            <option class="option" value="PEN">PEN - Nuevo sol peruano</option>
-                            <option class="option" value="PHP">PHP - Peso filipino</option>
-                            <option class="option" value="PLN">PLN - Zloty polaco</option>
-                            <option class="option" value="QAR">QAR - Riyal qatarí</option>
-                            <option class="option" value="RON">RON - Leu romano</option>
-                            <option class="option" value="RSD">RSD - Dinar serbio</option>
-                            <option class="option" value="RUB">RUB - Rublo ruso</option>
-                            <option class="option" value="SAR">SAR - Riyal saudí</option>
-                            <option class="option" value="SEK">SEK - Corona sueca</option>
-                            <option class="option" value="SGD">SGD - Dólar singapurense</option>
-                            <option class="option" value="THB">THB - Baht tailandés</option>
-                            <option class="option" value="TND">TND - Dinar tunecino</option>
-                            <option class="option" value="TRY">TRY - Lira turca</option>
-                            <option class="option" value="TWD">TWD - Dólar taiwanés</option>
-                            <option class="option" value="UAH">UAH - Grivna ucraniana</option>
-                            <option class="option" value="USD" selected>USD - Dólar EE. UU.</option>
-                            <option class="option" value="UYU">UYU - Peso uruguayo</option>
-                            <option class="option" value="VND">VND - Dong vietnamita</option>
-                            <option class="option" value="ZAR">ZAR - Rand sudafricano</option>
+                        <optgroup label="Todas las monedas" class="option" id="todas-monedas">
                             
                         </optgroup>
                     </select>
@@ -130,8 +72,12 @@
                             </div>
                             <div>
                                 <label class="uselessLabel" for="rooms"></label>
+                                <!-- <i class="fas fa-user"></i> -->
                                 <select class="essentials" name="rooms" id="rooms">
-                                    <option value="single"> 🙂 Habitacion individual</option>
+                                    <span style="display: inline-flex"><i class="fas fa-user"></i></span>
+                                    <option value="single"> 
+                                        
+                                        Habitacion individual</option>
                                     <option value="double"> 👫 Habitacion doble</option>
                                     <option value="family" selected> 👪 Familiar</option>
                                 </select>
@@ -234,117 +180,12 @@
                     <div>
                         <section class="top-cities-section" style="float: left;">
                             <h3 class="h3-tri">Más ciudades destacadas</h3>
-                            <ul class="top-cities">
-                                <li class="cities"><a class="link-cities" href="#">Venecia</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Sevilla</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Nueva York</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Lhasa</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Rio de Janeiro</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Londres</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Marrakech</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Petra</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Roma</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Varanasi</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Florencia</a></li>
-                                <li class="cities"><a class="link-cities" href="#">La Habana</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Verona</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Kyoto</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Jerusalén</a></li>
-                                <li class="cities"><a class="link-cities" href="#">París</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Beijing</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Lalibela</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Granada</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Atenas</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Bagan</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Katmandú</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Ciudad del Vaticano</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Lisboa</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Tokio</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Estambul</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Hoi An</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Ámsterdam</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Luxor</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Berlín</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Jaipur</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Lyon</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Oia</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Siem Reap</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Viena</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Cuzco</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Cartagena</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Buenos Aires</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Zanzíbar</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Ciudad de México</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Singapur</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Las Vegas</a></li>
-                                <li class="cities"><a class="link-cities" href="#">San Francisco</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Sydney</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Mont Saint Michel</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Dubrovnik</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Bangkok</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Antigua Guatemala</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Praga</a></li>
-                                <li class="cities"><a class="link-cities" href="#">Budapest</a></li>
+                            <ul class="top-cities" id="top-cities"> 
                             </ul>
                          </section>
                         <section class="trivago-inter-section" style="float: left;">
                         <h3 class="h3-tri">trivago internacional</h3>
-                        <ul class="trivago-inter">
-                            <li class="internacional"><a href="#" class="link-trivago-inter">العالم العربي trivago</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Australia</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Argentina</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago България</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago België</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Brasil</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Canada</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Česko</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Chile</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Colombia</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Danmark</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Deutchland</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ecuador</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ελλάδα</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago España</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago France</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 한국</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Hrvatska</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago India</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Indonesia</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Ireland</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Italia</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Magyarország</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Malaysia</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Mexico</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Nederland</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago New Zealand</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Norge</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Österreich</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Perú</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Philippines</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Polska</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Portugal</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago ประเทศไทย</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 日本</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago România</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Россия</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Schweiz</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Singapore</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Slovenija</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Slovensko</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago South Africa</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Srbija</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Suomi</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Sverige</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 台灣</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Türkey</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago UAE</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago United Kingdom</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Uruguay</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago USA</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago Việt Nam</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 香港</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago ישראל</a></li>
-                            <li class="internacional"><a href="#" class="link-trivago-inter">trivago 中国</a></li>
+                        <ul class="trivago-inter" id="trivago-internacional">
                         </ul>
                     </section>
                     </div>
@@ -421,61 +262,6 @@
                 </div>
                 <div class="footer-country">
                     <select name="select-country" id="select-country" class="select-country icon-arrow">
-                        <option value="aa" class="country-options">العالم العربي</option>
-                        <option value="ar" class="country-options">Argentina</option>
-                        <option value="au" class="country-options">Australia</option>
-                        <option value="bg" class="country-options">България</option>
-                        <option value="be" class="country-options">België</option>
-                        <option value="br" class="country-options">Brasil</option>
-                        <option value="ca" class="country-options">Canada</option>
-                        <option value="cz" class="country-options">Česko</option>
-                        <option value="cl" class="country-options">Chile</option>
-                        <option value="co" class="country-options">Colombia</option>
-                        <option value="dk" class="country-options">Danmark</option>
-                        <option value="de" class="country-options">Deutchland</option>
-                        <option value="ec" class="country-options">Ecuador</option>
-                        <option value="gr" class="country-options">Ελλάδα</option>
-                        <option value="es" class="country-options">España</option>
-                        <option value="fr" class="country-options">France</option>
-                        <option value="kr" class="country-options">한국</option>
-                        <option value="hr" class="country-options">Hrvatska</option>
-                        <option value="in" class="country-options">India</option>
-                        <option value="id" class="country-options">Indonesia</option>
-                        <option value="ie" class="country-options">Ireland</option>
-                        <option value="it" class="country-options">Italia</option>
-                        <option value="hu" class="country-options">Magyarország</option>
-                        <option value="my" class="country-options">Malaysia</option>
-                        <option value="mx" class="country-options">Mexico</option>
-                        <option value="nl" class="country-options">Nederland</option>
-                        <option value="nz" class="country-options">New Zealand</option>
-                        <option value="no" class="country-options">Norge</option>
-                        <option value="at" class="country-options">Österreich</option>
-                        <option value="pe" class="country-options">Perú</option>
-                        <option value="ph" class="country-options">Philippines</option>
-                        <option value="pl" class="country-options">Polska</option>
-                        <option value="pt" class="country-options">Portugal</option>
-                        <option value="th" class="country-options">ประเทศไทย</option>
-                        <option value="jp" class="country-options">日本</option>
-                        <option value="ro" class="country-options">România</option>
-                        <option value="ru" class="country-options">Россия</option>
-                        <option value="ch" class="country-options">Schweiz</option>
-                        <option value="sg" class="country-options">Singapore</option>
-                        <option value="si" class="country-options">Slovenija</option>
-                        <option value="sk" class="country-options">Slovensko</option>
-                        <option value="za" class="country-options">South Africa</option>
-                        <option value="rs" class="country-options">Srbija</option>
-                        <option value="fi" class="country-options">Suomi</option>
-                        <option value="se" class="country-options">Sverige</option>
-                        <option value="tw" class="country-options">台灣</option>
-                        <option value="tr" class="country-options">Türkey</option>
-                        <option value="ae" class="country-options">UAE</option>
-                        <option value="uk" class="country-options">United Kingdom</option>
-                        <option value="uy" class="country-options">Uruguay</option>
-                        <option value="us" class="country-options" selected>USA</option>
-                        <option value="vn" class="country-options">Việt Nam</option>
-                        <option value="hk" class="country-options">香港</option>
-                        <option value="il" class="country-options">ישראל</option>
-                        <option value="cn" class="country-options">中国</option>
                     </select>
                 </div>
             </div>
@@ -546,7 +332,7 @@
             </div>
         </footer>   
     <script src="js/jquery-3.3.1.min.js" ></script>
-    <script src="js/controlador.js"></script>
+    <script src="js/controlador1.js"></script>
     
     
 </body>
