@@ -85,8 +85,14 @@ $(document).ready(function(){
         dataType: 'json',
         success:function(respuestaPais){
             for(var i=0; i<respuestaPais.length; i++){
-                $("#select-country").append(`
-                <option value="${respuestaPais[i].value}" class="country-options">${respuestaPais[i].nombre}</option>`)
+                if(respuestaPais[i].value=="us"){
+                    $("#select-country").append(`
+                    <option value="${respuestaPais[i].value}" class="country-options" selected>${respuestaPais[i].nombre}</option>`);
+                }
+                else{
+                    $("#select-country").append(`
+                    <option value="${respuestaPais[i].value}" class="country-options">${respuestaPais[i].nombre}</option>`);
+                };
             }
         }
     });
@@ -101,10 +107,10 @@ $('#idioma-btn').click(function(){
 
 
 function mostrarHoteles(){
-    document.getElementById('destinations').innerHTML='';
+    document.getElementsByClassName('destinations').innerHTML='';
     for (var i=0; i<4; i++){
         console.log('Mostrar Hoteles');
-        document.getElementById('destinations').innerHTML += `<ul class="list-des">
+        document.getElementsByClassName('destinations').innerHTML += `<ul class="list-des">
         <li class="destinos">
             <a href="#" class="link-hoteles">
                 <div class="destinos-ciudades" style="background-image: url(${informacion[i].urlHotel});">
@@ -114,6 +120,20 @@ function mostrarHoteles(){
             </a>
         </li>`;
     }
+    // document.getElementsByClassName('destinations-m').innerHTML='';
+    // for (var i=0; i<3; i++){
+    //     console.log('Mostrar Hoteles');
+    //     document.getElementByclas('destinations-m').innerHTML += `<ul class="list-des">
+    //     <li class="destinos">
+    //         <a href="#" class="link-hoteles">
+    //             <div class="destinos-ciudades" style="background-image: url(${informacion[i].urlHotel});">
+    //             </div>
+    //             <div class="hoteles-en">${informacion[i].destino}</div>
+    //             <div class="hoteles-promos"> ${informacion[i].numeroHoteles} <strong>Prom.</strong> ${informacion[i].prom} </div>
+    //         </a>
+    //     </li>`;
+    }
+
 }
 mostrarHoteles();
 

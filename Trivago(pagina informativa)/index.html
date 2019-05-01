@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
     <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body id="body" >
@@ -19,15 +20,15 @@
                 <div class="menu-button">
                     <select name="moneda-btn" id="moneda-btn" class="menu-btn" >
                         <optgroup label="Principales monedas" class="option" id="moneda-principal">
-                            
+
                         </optgroup>
                         <optgroup label="Todas las monedas" class="option" id="todas-monedas">
-                            
+
                         </optgroup>
                     </select>
                 </div>
                 <div class="menu-button" style="width:65px; margin: 0px;">
-                    <input id="idioma-btn" class="menu-btn" type="button" value="ES"> 
+                    <input id="idioma-btn" class="menu-btn" type="button" value="ES">
                      <div id="idioma-option" class="popover-div popover-custom">
                         <section class="popover">
                             <section class="menu-idioma">
@@ -37,7 +38,7 @@
                             </ul>
                         </section>
                         </section>
-                    </div> 
+                    </div>
                 </div>
                 <div class="menu-button">
                     <a href="http://localhost/trivago-poo/trivago/register" style="text-decoration: none;">
@@ -46,6 +47,11 @@
                 <div class="menu-button">
                     <a href="http://localhost/trivago-poo/trivago/login" style="text-decoration: none;">
                     <input  class="menu-btn" type="button" value="Iniciar sesión"; style="width: 113.7px; "></a>
+                </div>
+                <div class="micon">
+                        <button type="button" class="btn-menu">
+                                <i class="fas fa-bars"></i> Menú
+                        </button>
                 </div>
             </div>
         </header>
@@ -72,14 +78,10 @@
                             </div>
                             <div>
                                 <label class="uselessLabel" for="rooms"></label>
-                                <!-- <i class="fas fa-user"></i> -->
                                 <select class="essentials" name="rooms" id="rooms">
-                                    <span style="display: inline-flex"><i class="fas fa-user"></i></span>
-                                    <option value="single"> 
-                                        
-                                        Habitacion individual</option>
-                                    <option value="double"> 👫 Habitacion doble</option>
-                                    <option value="family" selected> 👪 Familiar</option>
+                                    <option value="single"> Habitacion individual</option>
+                                    <option value="double"> Habitacion doble</option>
+                                    <option value="family" selected>  Familiar</option>
                                 </select>
                             </div>
                         </div>
@@ -89,9 +91,9 @@
                             </button>
                      </div>
                  </div>
-                
+
             </form>
-        
+
         </section>
     </div>
         <main>
@@ -108,79 +110,99 @@
                     </ul>
                 </div>
                 <div class="opt-hoteles">
+                    <!-- Pantallas grander -->
                         <div class="destinations" id="destinations">
                             </div>
                         <div class="slider-control" id="destinations-btn">
-                                <button  id="arrow-left" type="button" class="arrow-slider arrow-slider-unactive">
-                                        <i class="fas fa-angle-left"></i>
-                                </button>
-                                <button id="dot-slider1" class="dot-slider dot-slider-active" type="button" onclick="slide1();" >
-                                        <i class="fas fa-circle"></i>
-                                </button>
-                                <button id="dot-slider2" class="dot-slider" type="button" onclick="slide2();">
-                                        <i class="fas fa-circle"></i>
-                                </button>
-                                <button id="dot-slider3" class="dot-slider" type="button" onclick="slide3();">
-                                        <i class="fas fa-circle"></i>
-                                </button>
-                                <button  id="arrow-right" type="button" class="arrow-slider"  onclick="slide2();">
-                                        <i class="fas fa-angle-right"></i>
-                                </button>
                             </div>
-                        <div class="destinations" id="destacados" style="display: none">
+                        <div class="destinations destinations-sm destinations-m" id="destacados" style="display: none">
                             </div>
-                    <div class="slider-control" id="destacados-btn" style="display: none">
-                        <button  id="arrow-left-1" type="button" class="arrow-slider arrow-slider-unactive">
-                                <i class="fas fa-angle-left"></i>
-                        </button>
-                        <button id="dot-slider4" class="dot-slider dot-slider-active" type="button" onclick="slide4();" >
-                                <i class="fas fa-circle"></i>
-                        </button>
-                        <button id="dot-slider5" class="dot-slider" type="button" onclick="slide5();">
-                                <i class="fas fa-circle"></i>
-                        </button>
-                        <button id="dot-slider6" class="dot-slider" type="button" onclick="slide6();">
-                                <i class="fas fa-circle"></i>
-                        </button>
-                        <button  id="arrow-right-1" type="button" class="arrow-slider"  onclick="slide5();">
-                                <i class="fas fa-angle-right"></i>
-                        </button>
-                    </div>
-                    
+                        <div class="slider-control" id="destacados-btn" style="display: none">
+                        </div>
+                    <!-- Pantallas medianas -->
+                        <div class="destinations" id="destinations1">
+                        </div>
+                        <div class="slider-control" id="destinations-btn1">
+                            </div>
+                        <div class="destinations destinations-sm destinations-m" id="destacados1" style="display: none">
+                            </div>
+                        <div class="slider-control" id="destacados-btn1" style="display: none">
+                        </div>
+                    <!-- Pantallas pequeñas -->
+                        <div class="destinations" id="destinations2">
+                        </div>
+                        <div class="slider-control" id="destinations-btn2">
+                            </div>
+                        <div class="destinations destinations-sm destinations-m" id="destacados2" style="display: none">
+                            </div>
+                        <div class="slider-control" id="destacados-btn2" style="display: none">
+                        </div>
+
                 </div>
                 <div class="informacion-tri">
-                    <div class="parrafo-info">
+                    <!-- <div class="parrafo-info">
                         <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
                         <p class="texto">
                             El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo.
                         </p>
-                    </div>
-                    <div class="parrafo-info">
-                        <h3 class="h3">Encuentra hoteles baratos en trivago</h3>
-                        <p class="texto">
-                            Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet. 
-                        </p>
-                    </div>
-                    <div class="parrafo-info">
-                        <h3 class="h3">Las opiniones de otros usuarios de ayudarán a encontrar tu hotel ideal</h3>
-                        <p class="texto">
-                            Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Islas de la Bahía y encontrar tu hotel ideal.
-                        </p>
-                    </div>
-                    <div class="parrafo-info">
-                        <h3 class="h3">Cómo reservar</h3>
-                        <p class="texto">
-                            trivago es el buscador de hoteles ideal para comparar entre una gran variedad de precios de numerosos hoteles y sitios web de reservaciones. Esto significa que decides en trivago qué hotel se ajusta más a tus necesidades y luego formalizas tu reservación en la página de la oferta que elijas, que está enlazada a nuestro buscador de hoteles. Por lo tanto, cuando hagas clic en el botón «Ver oferta», te redirigiremos a la página correspondiente para que reserves allí la oferta hotelera que hayas encontrado en trivago. <br>
+                    </div> -->
+                    <div class="container-fluid">
+                            <!-- Control the column width, and how they should appear on different devices -->
+                            <div class="row">
+                              <!-- <div class="col-xl-6"> -->
+                                    <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
+                                            <p class="texto">
+                                                El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo.
+                                            </p>
+                                        </div>
+                                        <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <h3 class="h3">Encuentra hoteles baratos en trivago</h3>
+                                                <p class="texto">
+                                                    Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet.
+                                                </p>
+                                            </div>
+                                        <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    <h3 class="h3">Las opiniones de otros usuarios de ayudarán a encontrar tu hotel ideal</h3>
+                                                    <p class="texto">
+                                                        Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Islas de la Bahía y encontrar tu hotel ideal.
+                                                    </p>
+                                                </div>
+                                            <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    <h3 class="h3">Cómo reservar</h3>
+                                                    <p class="texto">
+                                                        trivago es el buscador de hoteles ideal para comparar entre una gran variedad de precios de numerosos hoteles y sitios web de reservaciones. Esto significa que decides en trivago qué hotel se ajusta más a tus necesidades y luego formalizas tu reservación en la página de la oferta que elijas, que está enlazada a nuestro buscador de hoteles. Por lo tanto, cuando hagas clic en el botón «Ver oferta», te redirigiremos a la página correspondiente para que reserves allí la oferta hotelera que hayas encontrado en trivago. <br>
+                                                        <br>
+                                                        ¡Deja que trivago te ayude a encontrar el precio que buscas en más de 400 sitios web de reservaciones!
+                                                        <br>
+                                                        <br>
+                                                    </p>
+                                                </div>
+                              </div>
+                            </div>
                             <br>
-                            ¡Deja que trivago te ayude a encontrar el precio que buscas en más de 400 sitios web de reservaciones!
-                            <br>
-                            <br>
-                        </p>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <section class="top-cities-section" style="float: left;">
+                                            <h3 class="h3-tri">Más ciudades destacadas</h3>
+                                            <ul class="top-cities" id="top-cities">
+                                            </ul>
+                                         </section>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <section class="trivago-inter-section" style="float: left;">
+                                            <h3 class="h3-tri">trivago internacional</h3>
+                                            <ul class="trivago-inter" id="trivago-internacional">
+                                            </ul>
+                                        </section>
+                            </div>
                     </div>
-                    <div>
+                    <!-- <div>
                         <section class="top-cities-section" style="float: left;">
                             <h3 class="h3-tri">Más ciudades destacadas</h3>
-                            <ul class="top-cities" id="top-cities"> 
+                            <ul class="top-cities" id="top-cities">
                             </ul>
                          </section>
                         <section class="trivago-inter-section" style="float: left;">
@@ -188,15 +210,15 @@
                         <ul class="trivago-inter" id="trivago-internacional">
                         </ul>
                     </section>
-                    </div>
-                
+                    </div> -->
+
                 </div>
 
             </div>
         </main>
         <footer id="footer" style="background: #293339">
             <div class="footer-registro-email">
-                <form class="subs-form">
+                <div class="subs-form">
                     <div class="subs-section">
                         <p class="suscripciones">
                             ¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!
@@ -206,9 +228,9 @@
                         <input type="email" placeholder="Dirección de email" class="email-promos">
                     <button class="suscribirse-btn">
                         <span class="subs-text">Suscribirse</span>
-                    </button>    
+                    </button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="footer-direction">
                 <div class="direction">
@@ -265,8 +287,8 @@
                     </select>
                 </div>
             </div>
-            
-                
+
+
             <div class="footer-others" >
                 <ul class="footer-items">
                     <li class="footer-list">
@@ -288,7 +310,7 @@
                         <a href="#" target="_blank" class="footer-link">Expedia</a>
                     </li>
                 </ul>
-                <ul class="footer-items"> 
+                <ul class="footer-items">
                     <li class="footer-list">
                         <a href="#" target="_blank" class="footer-link">App de trivago: para dispositivos móviles</a>
                     </li>
@@ -321,7 +343,7 @@
                 </ul>
 
             </div>
-            
+
             <div class="footer-logo-copyright">
                 <div  id= "logo-footer">
                      <img src="img/logo-footer" alt="logo.footer">
@@ -330,9 +352,9 @@
                         Copyright 2019 trivago | Todos los derechos reservados.
                 </div>
             </div>
-        </footer>   
+        </footer>
     <script src="js/jquery-3.3.1.min.js" ></script>
-    <script src="js/controlador1.js"></script>
-    
-    
+    <script src="js/controlador2.js"></script>
+
+
 </body>
