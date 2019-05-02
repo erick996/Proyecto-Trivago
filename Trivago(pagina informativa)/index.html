@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>trivago.com - Compara precios de hoteles en todo el mundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="css/media1.css">
+
+</head>
+<body id="body" >
+    <div class="header-botones">
+        <header>
+            <div style="width: 347.9px; height:64px; margin-left:auto">
+                <div class="menu-button">
+                    <select name="moneda-btn" id="moneda-btn" class="menu-btn" >
+                        <optgroup label="Principales monedas" class="option" id="moneda-principal">
+
+                        </optgroup>
+                        <optgroup label="Todas las monedas" class="option" id="todas-monedas">
+
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="menu-button" style="width:65px; margin: 0px;">
+                    <input id="idioma-btn" class="menu-btn" type="button" value="ES">
+                     <div id="idioma-option" class="popover-div popover-custom">
+                        <section class="popover">
+                            <section class="menu-idioma">
+                            <ul class="menu-list">
+                                <li class="menu-item">EN - English</li>
+                                <li class="menu-item">ES - Español</li>
+                            </ul>
+                        </section>
+                        </section>
+                    </div>
+                </div>
+                <div class="menu-button">
+                    <a href="http://localhost/trivago-poo/trivago/register" style="text-decoration: none;">
+                    <input  class="menu-btn" type="button" value="Registrarse"; style="width: 103.59px;"></a>
+                </div>
+                <div class="menu-button">
+                    <a href="http://localhost/trivago-poo/trivago/login" style="text-decoration: none;">
+                    <input  class="menu-btn" type="button" value="Iniciar sesión"; style="width: 113.7px; "></a>
+                </div>
+                <div class="micon">
+                        <button type="button" class="btn-menu">
+                                <i class="fas fa-bars"></i> Menú
+                        </button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div style="width:100%; margin-top:90px">
+            </div>
+            <div id="logo" style="cursor:pointer">
+                <img src="img/trivago-logo" alt="logo-trivago">
+            </div>
+            <div id="lema">
+                <h1 class="lema-trivago" >Encuentra tu hotel ideal y compara precios de distintas páginas web</h1>
+            </div>
+            <form class="busqueda">
+                 <div class="searchingbar">
+                    <input type="text" placeholder="Ej.: Islas de la Bahía" class="search-bar search-bar-icon">
+                    <div id="essentials">
+                            <div class="calendar">
+                                <label class="uselessLabel" for="checkin"></label>
+                                <input class="essentials" id="checkin" type="date" title="Seleccione fecha de registro" name="date"
+                                    min="2018-12-01" max="2019-12-31" required>
+                                <label class="uselessLabel" for="checkout"></label>
+                                <input class="essentials" id="checkout" type="date" title="Selecione fecha de salida" name="date"
+                                    min="2018-12-01" max="2019-12-31" required>
+                            </div>
+                            <div>
+                                <label class="uselessLabel" for="rooms"></label>
+                                <select class="essentials" name="rooms" id="rooms">
+                                    <option value="single"> Habitacion individual</option>
+                                    <option value="double"> Habitacion doble</option>
+                                    <option value="family" selected>  Familiar</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="search-btn">
+                            <button type="button" class="buscar-btn">
+                                <a href="http://localhost/trivago-poo/landingpage/" class="buscar-btn-anchor">Buscar</a>
+                            </button>
+                     </div>
+                 </div>
+
+            </form>
+
+        </section>
+    </div>
+        <main>
+            <div class="body-content" >
+                <h2 class="body-title">¿No sabes dónde ir? Déjanos inspirarte</h2>
+                <div class="body-categories">
+                    <ul class="categories" role="tablelist">
+                        <li role="tab" class="btn-list">
+                            <button id="tabbtn" type="button" class="categories-btn btn-list-active">Ciudades destacadas</button>
+                        </li>
+                        <li role="tab" class="btn-list">
+                            <button id="tabbtn1" type="buttom" class="categories-btn">Destinos Populares</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="opt-hoteles">
+                    <!-- Pantallas grander -->
+                        <div class="destinations" id="destinations">
+                            </div>
+                        <div class="slider-control" id="destinations-btn">
+                            </div>
+                        <div class="destinations destinations-sm destinations-m" id="destacados" style="display: none">
+                            </div>
+                        <div class="slider-control" id="destacados-btn" style="display: none">
+                        </div>
+                    <!-- Pantallas medianas -->
+                        <div class="destinations" id="destinations1">
+                        </div>
+                        <div class="slider-control" id="destinations-btn1">
+                            </div>
+                        <div class="destinations destinations-sm destinations-m" id="destacados1" style="display: none">
+                            </div>
+                        <div class="slider-control" id="destacados-btn1" style="display: none">
+                        </div>
+                    <!-- Pantallas pequeñas -->
+                        <div class="destinations" id="destinations2">
+                        </div>
+                        <div class="slider-control" id="destinations-btn2">
+                            </div>
+                        <div class="destinations destinations-sm destinations-m" id="destacados2" style="display: none">
+                            </div>
+                        <div class="slider-control" id="destacados-btn2" style="display: none">
+                        </div>
+
+                </div>
+                <div class="informacion-tri">
+                    <!-- <div class="parrafo-info">
+                        <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
+                        <p class="texto">
+                            El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo.
+                        </p>
+                    </div> -->
+                    <div class="container-fluid">
+                            <!-- Control the column width, and how they should appear on different devices -->
+                            <div class="row">
+                              <!-- <div class="col-xl-6"> -->
+                                    <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
+                                            <p class="texto">
+                                                El buscador de hoteles de trivago te permite comparar fácilmente los precios en más de <strong>400</strong> sitios web de reservaciones que incluyen 1.8 millones de hoteles en más de 190 países. Cada año, 1,400 millones de viajeros visitan nuestro sitio web y utilizan nuestro buscador de hoteles para comparar distintas ofertas en la misma ciudad. Encontrar tu hotel ideal en trivago es un proceso rápido y sencillo.
+                                            </p>
+                                        </div>
+                                        <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <h3 class="h3">Encuentra hoteles baratos en trivago</h3>
+                                                <p class="texto">
+                                                    Con trivago te resultará muy fácil <strong>encontrar tu hotel ideal y comparar precios de distintas páginas web.</strong> Sólo tienes que indicar a dónde quieres ir y en qué fechas vas a viajar, y nuestro buscador de hoteles se ocupará de comparar los precios de los alojamientos por ti. Para concretar aún más los resultados de la búsqueda, puedes ordenarlos por criterios como el precio o la distancia (ej.: desde la playa), y filtrarlos por el número de estrellas, las instalaciones que te interesen y muchas otras opciones. Desde hostales económicos hasta suites de lujo, con trivago es muy sencillo reservar alojamiento por Internet.
+                                                </p>
+                                            </div>
+                                        <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    <h3 class="h3">Las opiniones de otros usuarios de ayudarán a encontrar tu hotel ideal</h3>
+                                                    <p class="texto">
+                                                        Con más de 175 millones de evaluaciones de hoteles y más de 19 millones de imágenes a tu disposición, podrás obtener información muy valiosa sobre los lugares que quieras visitar. Y para que te hagas una idea precisa de cómo es cada hotel, trivago te muestra la valoración promedio y abundantes opiniones procedentes de páginas de reservaciones como Hoteles.com, Expedia, hoteles prestigiosos, etc. trivago te lo pone fácil a la hora de planear tu próximo viaje a destinos como Islas de la Bahía y encontrar tu hotel ideal.
+                                                    </p>
+                                                </div>
+                                            <div class="parrafo-info col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    <h3 class="h3">Cómo reservar</h3>
+                                                    <p class="texto">
+                                                        trivago es el buscador de hoteles ideal para comparar entre una gran variedad de precios de numerosos hoteles y sitios web de reservaciones. Esto significa que decides en trivago qué hotel se ajusta más a tus necesidades y luego formalizas tu reservación en la página de la oferta que elijas, que está enlazada a nuestro buscador de hoteles. Por lo tanto, cuando hagas clic en el botón «Ver oferta», te redirigiremos a la página correspondiente para que reserves allí la oferta hotelera que hayas encontrado en trivago. <br>
+                                                        <br>
+                                                        ¡Deja que trivago te ayude a encontrar el precio que buscas en más de 400 sitios web de reservaciones!
+                                                        <br>
+                                                        <br>
+                                                    </p>
+                                                </div>
+                              </div>
+                            </div>
+                            <br>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <section class="top-cities-section" style="float: left;">
+                                            <h3 class="h3-tri">Más ciudades destacadas</h3>
+                                            <ul class="top-cities" id="top-cities">
+                                            </ul>
+                                         </section>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <section class="trivago-inter-section" style="float: left;">
+                                            <h3 class="h3-tri">trivago internacional</h3>
+                                            <ul class="trivago-inter" id="trivago-internacional">
+                                            </ul>
+                                        </section>
+                            </div>
+                    </div>
+                    <!-- <div>
+                        <section class="top-cities-section" style="float: left;">
+                            <h3 class="h3-tri">Más ciudades destacadas</h3>
+                            <ul class="top-cities" id="top-cities">
+                            </ul>
+                         </section>
+                        <section class="trivago-inter-section" style="float: left;">
+                        <h3 class="h3-tri">trivago internacional</h3>
+                        <ul class="trivago-inter" id="trivago-internacional">
+                        </ul>
+                    </section>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </main>
+        <footer id="footer" style="background: #293339">
+            <div class="footer-registro-email">
+                <div class="subs-form">
+                    <div class="subs-section">
+                        <p class="suscripciones">
+                            ¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!
+                        </p>
+                    </div>
+                    <div class="subs-email">
+                        <input type="email" placeholder="Dirección de email" class="email-promos">
+                    <button class="suscribirse-btn">
+                        <span class="subs-text">Suscribirse</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-direction">
+                <div class="direction">
+                    <p class="footer-address">
+                        <strong>trivago N.V.</strong>, Kesselstraße 5 – 7, 40221 Düsseldorf, Alemania
+                    </p>
+                    <ul class="social-media">
+                        <li class="footer-social-media">
+                            <a href="https://www.facebook.com/trivagoMX" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/facebook-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-social-media">
+                            <a href="https://www.twitter.com/trivago" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/twitter-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-social-media">
+                            <a href="https://www.instagram.com/trivago/" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/instagram-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-social-media">
+                            <a href="https://www.youtube.com/user/trivago" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/youtube-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-social-media">
+                            <a href="https://www.pinterest.com/trivago/" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/pinterest-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-social-media">
+                            <a href="https://www.linkedin.com/company/trivagonv" target="_blank" class="sm-reference">
+                                <span class="social-media-icon">
+                                    <img src="img/linkedin-logo.png" >
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <select name="select-country" id="select-country" class="select-country icon-arrow">
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="footer-others" >
+                <ul class="footer-items">
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link"> Presentación</a>
+                    </li>
+                    <li class="footer-list">
+                       <a href="#" target="_blank" class="footer-link">Trabajar en trivago</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Ofertas de empleo</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Prensa</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Investor Relations</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Expedia</a>
+                    </li>
+                </ul>
+                <ul class="footer-items">
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">App de trivago: para dispositivos móviles</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">trivago Hotel Manager: para hoteleros</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">trivago Magazine</a>
+                    </li>
+                </ul>
+                <ul class="footer-items">
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Ayuda</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Descrubre cómo funciona trivago</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Términos y condiciones</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Información legal</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Política de privacidad</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#" target="_blank" class="footer-link">Mapa del sitio</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-logo-copyright">
+                <div  id= "logo-footer">
+                     <img src="img/logo-footer" alt="logo.footer">
+                </div>
+                <div class="copyright-footer">
+                        Copyright 2019 trivago | Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/controlador2.js"></script>
+
+
+</body>
