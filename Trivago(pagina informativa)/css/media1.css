@@ -1,0 +1,110 @@
+@media only screen and (min-width: 980px){
+    .cities, .link-cities{
+        width: 32%;
+    }
+
+    .internacional, .link-trivago-inter{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+
+    .parrafo-info{
+        width: 100%;
+        float: left;
+ }
+}
+
+
+@media only screen and (min-width: 920px){
+    .h3{
+        font-size: 20;
+    }
+
+}
+
+@media only screen and (max-width: 980px){
+    .menu-button{
+        display: none;
+    }
+
+    .search-bar{
+        width: -webkit-fill-available;
+        margin-left: 10px;
+        margin-right: 0px; 
+    }
+
+    .micon{
+        display: block;
+    }
+    .calendar{
+        display:none;
+    }
+    #rooms{
+        display:none;
+    }
+    .cities, .link-cities{
+        width: 45%;
+    }
+
+    .internacional, .link-trivago-inter{
+        width: 45%;
+    }
+    
+     .destinations{
+        display:none;
+    } 
+
+    #dot-slider7{
+    display: -webkit-inline-box;
+    }
+
+    .slider-control{
+        margin: 0px 471px;
+    }
+
+    #destinations{
+        display:none;
+    }
+
+    #destinations-btn{
+        display:none;
+    }
+
+    #destinations1{
+        display: block;
+    }
+
+    #destinations-btn1{
+        display: block;
+    }
+
+    .subs-section{
+        width: 100%;
+        display:contents;
+    }
+
+    .subs-email{
+        width: -webkit-fill-available;
+        display:flex;
+        height: 76px;
+        box-sizing: border-box;
+    }
+    .email-promos{
+        width: -webkit-fill-available;
+    }
+    .suscripciones{
+        width: 100%;
+    }
+
+    .subs-form{
+        border:none;
+    }
+    .footer-registro-email{
+        justify-content: center;
+        height: 78px;
+        padding: 0px 16px;
+        margin: 0px auto 32px auto;
+    }
+}
