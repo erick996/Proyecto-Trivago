@@ -72,7 +72,7 @@ $(document).ready(function() {
                         <button class="breakfast btn btn-primary">Desayuno gratis</button>
                     </div>
                     <section class="deal">
-                        <a href="#"><button class="viewDeal btn btn-primary" title="Ver oferta">Ver oferta</button></a>
+                        <a href="#"><button class="viewDeal btn btn-primary" title="Reservar">Reservar</button></a>
                     </section>
                 </section>
             </div>`);
@@ -339,7 +339,7 @@ $("#location").change(function(){
                         <button class="breakfast btn btn-primary">Desayuno gratis</button>
                     </div>
                     <section class="deal">
-                        <a href="#"><button class="viewDeal btn btn-primary" title="Ver oferta">Ver oferta</button></a>
+                        <a href="#"><button class="viewDeal btn btn-primary" title="Reservar">Reservar</button></a>
                     </section>
                 </section>
             </div>`);
