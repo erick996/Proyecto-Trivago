@@ -8,6 +8,12 @@
       case 'listaSeleccionada':
       echo Hotel::obtenerListas($_GET["codigoLocalizacion"]);
          break;
+
+      case 'puntuacionSeleccionada':
+      echo Hotel::obtenerPuntos($_GET["codigoCalificacion"]);
+         break;
+
+
    }
    
 

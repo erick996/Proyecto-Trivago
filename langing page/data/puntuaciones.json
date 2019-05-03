@@ -1,0 +1,24 @@
+[
+    {
+        "codigoCalificacion": 1,
+        "calificacion": "Aceptable"
+    },
+    {
+        "codigoCalificacion": 2,
+        "calificacion": "Razonable"
+    },
+    {
+        "codigoCalificacion": 3,
+        "calificacion": "Bueno"
+    },
+    {
+        "codigoCalificacion": 4,
+        "calificacion": "Muy Bueno"
+    },
+    {
+        "codigoCalificacion": 5,
+        "calificacion": "Excelente"
+    }
+
+
+]
