@@ -198,6 +198,19 @@ class Hotel{
         $registros = null;
         return json_encode($resultado);
 }
+public static function obtenerPuntos($codigoCalificacion){
+    $registros = json_decode(file_get_contents("../data/hoteles1.json"),true);
+    $res = array();
+    for ($i=0;$i<count($registros);$i++){
+            if ($registros[$i]["codigoCalificacion"]==$codigoCalificacion){
+                    $res[] = $registros[$i];
+            }
+    }
+    $registros = null;
+    return json_encode($res);
+}
+
+
 }
 
 ?>
