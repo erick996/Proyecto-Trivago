@@ -1,5 +1,5 @@
 var informacion=[
-    {destino:'Hoteles en Montrea',urlHotel:'img/Montreal.jpg',numeroHoteles:'15235 hoteles',prom:'$563'},
+    {destino:'Hoteles en Montreal',urlHotel:'img/Montreal.jpg',numeroHoteles:'15235 hoteles',prom:'$563'},
     {destino:'Hoteles en Roatan',urlHotel:'img/Roatán.jpg',numeroHoteles:'6235 hoteles',prom:'$800'},
     {destino:'Hoteles en La Ceiba',urlHotel:'img/LaCeiba.jpg',numeroHoteles:'8962 hoteles',prom:'$623'},
     {destino:'Hoteles en Lago de Yojoa',urlHotel:'img/LagoDeYojoa.jpg',numeroHoteles:'851 hoteles',prom:'$460'},
@@ -15,6 +15,8 @@ var destacados=[
     {destino:'Hoteles en Rio de Janeiro',urlHotel:'img/RioDeJaneiro.jpg',numeroHoteles:'3962 hoteles',prom:'$1925'},
     {destino:'Hoteles en San Francisco',urlHotel:'img/SanFrancisco.jpg',numeroHoteles:'6632 hoteles',prom:'$1549'}
 ]
+
+
 
 $(document).ready(function(){
     console.log('Obtener lista de monedas');
@@ -106,36 +108,128 @@ $('#idioma-btn').click(function(){
 });
 
 
+$(document).ready(function(){
+    $('#destinations-btn').append(`
+                                <button  id="arrow-left" type="button" class="arrow-slider arrow-slider-unactive">
+                                        <i class="fas fa-angle-left"></i>
+                                </button>
+                                <button id="dot-slider1" class="dot-slider dot-slider-active" type="button" onclick="slide1();" >
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider2" class="dot-slider" type="button" onclick="slide2();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider3" class="dot-slider" type="button" onclick="slide3();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button  id="arrow-right" type="button" class="arrow-slider"  onclick="slide2();">
+                                        <i class="fas fa-angle-right"></i>
+                                </button>`)
+});
+
+$(document).ready(function(){
+    $('#destinations-btn1').append(`
+                                <button  id="arrow-left" type="button" class="arrow-slider arrow-slider-unactive">
+                                        <i class="fas fa-angle-left"></i>
+                                </button>
+                                <button id="dot-slider1" class="dot-slider dot-slider-active" type="button" onclick="slide1();" >
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider2" class="dot-slider" type="button" onclick="slide2();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider3" class="dot-slider" type="button" onclick="slide3();">
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                <button id="dot-slider7" class="dot-slider" type="button" onclick="slide7();" >
+                                        <i class="fas fa-circle"></i>
+                                </button>
+                                
+                                <button  id="arrow-right" type="button" class="arrow-slider"  onclick="slide2();">
+                                        <i class="fas fa-angle-right"></i>
+                                </button>`)
+});
+
+$(document).ready(function(){
+    $('#destacados-btn').append(`
+                            <button  id="arrow-left-1" type="button" class="arrow-slider arrow-slider-unactive">
+                                    <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button id="dot-slider4" class="dot-slider dot-slider-active" type="button" onclick="slide4();" >
+                                    <i class="fas fa-circle"></i>
+                            </button>
+                            <button id="dot-slider5" class="dot-slider" type="button" onclick="slide5();">
+                                    <i class="fas fa-circle"></i>
+                            </button>
+                            <button id="dot-slider6" class="dot-slider" type="button" onclick="slide6();">
+                                    <i class="fas fa-circle"></i>
+                            </button>
+                            <button  id="arrow-right-1" type="button" class="arrow-slider"  onclick="slide5();">
+                                    <i class="fas fa-angle-right"></i>
+                            </button>`)
+})
+
 function mostrarHoteles(){
-    document.getElementsByClassName('destinations').innerHTML='';
-    for (var i=0; i<3; i++){
+    document.getElementById('destinations').innerHTML='';
+    for (var i=0; i<4; i++){
         console.log('Mostrar Hoteles');
-        document.getElementsByClassName('destinations').innerHTML += `<ul class="list-des">
-        <li class="destinos">
-            <a href="#" class="link-hoteles">
-                <div class="destinos-ciudades" style="background-image: url(${informacion[i].urlHotel});">
-                </div>
-                <div class="hoteles-en">${informacion[i].destino}</div>
-                <div class="hoteles-promos"> ${informacion[i].numeroHoteles} <strong>Prom.</strong> ${informacion[i].prom} </div>
-            </a>
-        </li>`;
+        document.getElementById('destinations').innerHTML += `<div class="carousel-item col-sm-3  ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 1" class="thumb"><ul class="list-des">
+                                          <li class="destinos" style="display: inline-block">
+                                              <a href="#" class="link-hoteles">
+                                                  <div class="destinos-ciudades" style="background-image: url(img/infinityBay.jpg); ">
+                                                  </div>
+                                                  <div class="hoteles-en">${destacados[i].destino}</div>
+                                                  <div class="hoteles-promos"> ${destacados[i].numeroHoteles} <strong>Prom.</strong> ${destacados[i].prom} </div>
+                                              </a>
+                                          </li>
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>`;
     }
 }
 mostrarHoteles();
+
+// function mostrarHotelesMedium(){
+//     document.getElementById('destinations1').innerHTML='';
+//     for (var i=0; i<3; i++){
+//         console.log('Mostrar Hoteles');
+//         document.getElementById('destinations1').innerHTML += `<ul class="list-des">
+//         <li class="destinos">
+//             <a href="#" class="link-hoteles">
+//                 <div class="destinos-ciudades" style="background-image: url(${informacion[i].urlHotel});">
+//                 </div>
+//                 <div class="hoteles-en">${informacion[i].destino}</div>
+//                 <div class="hoteles-promos"> ${informacion[i].numeroHoteles} <strong>Prom.</strong> ${informacion[i].prom} </div>
+//             </a>
+//         </li>`;
+//     }
+// }
+// mostrarHotelesMedium();
 
 function mostrarHoteles1(){
     document.getElementById('destacados').innerHTML='';
     for (var i=0; i<4; i++){
         console.log('Mostrar Hoteles 1');
-        document.getElementById('destacados').innerHTML += `<ul class="list-des">
-        <li class="destinos">
-            <a href="#" class="link-hoteles">
-                <div class="destinos-ciudades" style="background-image: url(${destacados[i].urlHotel});">
-                </div>
-                <div class="hoteles-en">${destacados[i].destino}</div>
-                <div class="hoteles-promos"> ${destacados[i].numeroHoteles} <strong>Prom.</strong> ${destacados[i].prom} </div>
-            </a>
-        </li>`;
+        document.getElementById('destacados').innerHTML += `<div class="carousel-item col-sm-3  ">
+        <div class="panel panel-default">
+           <div class="panel-thumbnail">
+             <a href="#" title="image 1" class="thumb"><ul class="list-des">
+               <li class="destinos" style="display: inline-block">
+                   <a href="#" class="link-hoteles">
+                       <div class="destinos-ciudades" style="background-image: url(img/infinityBay.jpg); ">
+                       </div>
+                       <div class="hoteles-en">${destacados[i].destino}</div>
+                       <div class="hoteles-promos"> ${destacados[i].numeroHoteles} <strong>Prom.</strong> ${destacados[i].prom} </div>
+                   </a>
+               </li>
+             </a>
+           </div>
+         </div>
+     </div>`;
     }
 }
 mostrarHoteles1();
@@ -163,6 +257,9 @@ $('#tabbtn1').click(function(){
     $('#tabbtn1').removeClass("btn-list-active");
     $('#tabbtn1').addClass("btn-list-active");
 }); 
+
+
+
 
 function slide1(){
     document.getElementById('dot-slider2').classList.remove('dot-slider-active');

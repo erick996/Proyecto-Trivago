@@ -8,9 +8,16 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos1.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media1.css">
+
+   
 
 </head>
 <body id="body" >
@@ -113,9 +120,114 @@
                     
                 </div>
                 
-                <div class="opt-hoteles">
-                    <!-- Pantallas grander -->
-                        <div class="destinations" id="destinations">
+                <div class="container" >
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                 <div class="carousel-item col-sm-3  ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 1" class="thumb"><ul class="list-des">
+                                                <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=1" alt="slide 1">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-sm-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 3" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=2" alt="slide 2">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div> 
+                                <div class="carousel-item col-sm-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 4" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=3" alt="slide 3">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-sm-3 active">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 5" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=4" alt="slide 4">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-sm-3 ">
+                                  <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 6" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=5" alt="slide 5">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-sm-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 7" class="thumb">
+                                          <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=6" alt="slide 6">
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-sm-3 ">
+                                   <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 8" class="thumb">
+                                          <ul class="list-des">
+                                            <li class="destinos" style="display: inline-block">
+                                                <a href="#" class="link-hoteles">
+                                                    <div class="destinos-ciudades" style="background-image: url(img/infinityBay.jpg); ">
+                                                    </div>
+                                                    <div class="hoteles-en">${destacados[i].destino}</div>
+                                                    <div class="hoteles-promos"> ${destacados[i].numeroHoteles} <strong>Prom.</strong> ${destacados[i].prom} </div>
+                                                </a>
+                                            </li>
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div> 
+                                 <!-- <div class="carousel-item col-sm-3  ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 2" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=8" alt="slide 8">
+                                        </a>
+                                      </div>
+                    
+                                    </div> 
+                                </div> -->
+                                <!-- <div class="carousel-item col-sm-3  ">
+                                    <div class="panel panel-default">
+                                      <div class="panel-thumbnail">
+                                        <a href="#" title="image 2" class="thumb">
+                                         <img class="img-fluid mx-auto d-block" src="//via.placeholder.com/200x200?text=8" alt="slide 9">
+                                        </a>
+                                      </div>
+                    
+                                    </div>
+                                </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next text-faded" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                <!-- <div class="opt-hoteles">
+                                           <div class="destinations" id="destinations">
                             </div>
                         <div class="slider-control" id="destinations-btn">
                             </div>
@@ -123,7 +235,7 @@
                             </div>
                         <div class="slider-control" id="destacados-btn" style="display: none">
                         </div>
-                    <!-- Pantallas medianas -->
+                   
                         <div class="destinations" id="destinations1">
                         </div>
                         <div class="slider-control" id="destinations-btn1">
@@ -132,7 +244,7 @@
                             </div>
                         <div class="slider-control" id="destacados-btn1" style="display: none">
                         </div>
-                    <!-- Pantallas pequeñas -->
+                   
                         <div class="destinations" id="destinations2">
                         </div>
                         <div class="slider-control" id="destinations-btn2">
@@ -142,7 +254,7 @@
                         <div class="slider-control" id="destacados-btn2" style="display: none">
                         </div>
 
-                </div>
+                </div> -->
                 <div class="informacion-tri">
                     <!-- <div class="parrafo-info">
                         <h3 class="h3">Búsqueda global de hoteles en trivago</h3>
@@ -358,8 +470,53 @@
                 </div>
             </div>
         </footer>
+    
     <script src="js/jquery-3.3.1.min.js" ></script>
-    <script src="js/controlador2.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script lang="javascript">
+    $('#myCarousel').on('slide.bs.carousel', function (e) {
 
 
+var $e = $(e.relatedTarget);
+var idx = $e.index();
+var itemsPerSlide = 4;
+var totalItems = $('.carousel-item').length;
+
+if (idx >= totalItems-(itemsPerSlide-1)) {
+    var it = itemsPerSlide - (totalItems - idx);
+    for (var i=0; i<it; i++) {
+        // append slides to end
+        if (e.direction=="left") {
+            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+        }
+        else {
+            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+        }
+    }
+}
+});
+
+
+$('#myCarousel').carousel({
+            interval: 5000
+    });
+
+
+$(document).ready(function() {
+/* show lightbox when clicking a thumbnail */
+$('a.thumb').click(function(event){
+  event.preventDefault();
+  var content = $('.modal-body');
+  content.empty();
+    var title = $(this).attr("title");
+    $('.modal-title').html(title);
+    content.html($(this).html());
+    $(".modal-profile").modal({show:true});
+});
+
+});</script>
 </body>
