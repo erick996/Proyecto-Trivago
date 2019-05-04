@@ -7,7 +7,8 @@
 }   
 
 .icon-arrow{
-    background: url(../img/arrow.png) no-repeat scroll 256px 16px;
+    background: url(../img/arrow.png) no-repeat;
+    background-position: 98% 50%;
 }
 
 #logo{ 
@@ -315,9 +316,9 @@
 
 .body-categories{
     height: 49px;
-    border-bottom-width: 0.5px;
+    /* border-bottom-width: 0.5px;
     border-bottom-style: solid;
-    border-bottom-color: #CDD0D2;
+    border-bottom-color: #CDD0D2; */
 }
 
 
@@ -676,7 +677,7 @@ outline-offset: -3px;
 
 .footer-items{
     width: 326.5px;
-    height: 132px;
+    /* height: 132px; */
     padding: 0px 16px;
     margin-bottom: 32px;
     margin-top: 0px;
