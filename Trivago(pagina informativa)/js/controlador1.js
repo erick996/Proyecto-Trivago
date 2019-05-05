@@ -18,8 +18,6 @@ var destacados=[
 
 $(document).ready(function(){
     console.log("respuesta");
-    // var aleatorio= Math.round(Math.random()*4);
-    //  console.log(aleatorio);
     $.ajax({
         url:"ajax/ubicaciones.php?accion=listar",
         dataType:"json",
@@ -230,10 +228,12 @@ mostrarHoteles1();
 
 $('#tabbtn').click(function(){
     $('#destinations').removeAttr('style');
-    $('#destinations').css('display', 'block');
+    $('#destinations').css('display', 'flex');
+    $('#destinations').css('justify-content', 'center');
     $('#destacados').css('display', 'none');
     $('#destinations-btn').removeAttr('style');
-    $('#destinations-btn').css('display', 'block');
+    $('#destinations-btn').css('display', 'flex');
+    $('#destinations-btn').css('justify-content', 'center');
     $('#destacados-btn').css('display', 'none');
     $('#tabbtn').removeClass("btn-list-active");
     $('#tabbtn1').removeClass("btn-list-active");
@@ -242,10 +242,12 @@ $('#tabbtn').click(function(){
 
 $('#tabbtn1').click(function(){
     $('#destacados').removeAttr('style');
-    $('#destacados').css('display', 'block');
+    $('#destacados').css('display', 'flex');
+    $('#destacados').css('justify-content', 'center');
     $('#destinations').css('display', 'none');
     $('#destacados-btn').removeAttr('style');
-    $('#destacados-btn').css('display', 'block');
+    $('#destacados-btn').css('display', 'flex');
+    $('#destacados-btn').css('justify-content', 'center');
     $('#destinations-btn').css('display', 'none');
     $('#tabbtn').removeClass("btn-list-active");
     $('#tabbtn1').removeClass("btn-list-active");
