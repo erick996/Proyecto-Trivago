@@ -1,0 +1,149 @@
+@media only screen and (min-width: 980px){
+    .cities, .link-cities{
+        width: 32%;
+    }
+
+    .internacional, .link-trivago-inter{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+
+    .parrafo-info{
+        width: 100%;
+        float: left;
+ }
+}
+
+
+@media only screen and (min-width: 920px){
+    .h3{
+        font-size: 20;
+    }
+
+}
+
+@media only screen and (max-width: 980px){
+    .menu-button{
+        display: none;
+    }
+
+    .search-bar{
+        width: -webkit-fill-available;
+        margin-left: 10px;
+        margin-right: 0px; 
+    }
+
+    .micon{
+        display: block;
+    }
+    .calendar{
+        display:none;
+    }
+    #rooms{
+        display:none;
+    }
+    .cities, .link-cities{
+        width: 45%;
+    }
+
+    .internacional, .link-trivago-inter{
+        width: 45%;
+    }
+    
+    .destinos-ciudades{
+        width: 210px !important ;
+        height: 208px !important ;
+    }
+    
+
+    .subs-section{
+        width: 100%;
+        display:contents;
+    }
+
+    .subs-email{
+        width: -webkit-fill-available;
+        display:flex;
+        height: 76px;
+        box-sizing: border-box;
+    }
+    .email-promos{
+        width: -webkit-fill-available;
+    }
+    .suscripciones{
+        width: 100%;
+    }
+
+    .subs-form{
+        border:none;
+    }
+    .footer-registro-email{
+        justify-content: center;
+        height: 78px;
+        padding: 0px 16px;
+        margin: 0px auto 32px auto;
+    }
+
+    .footer-direction{
+        width: inherit;
+        
+        /* height: 122px;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .direction{
+            /* width: auto; */
+    height: 122px;
+    padding: 0px 16px;
+    /* float: left; */
+    margin: 66px 0px;
+    position: absolute;
+    /* padding-top: 54px; */
+    /* padding-bottom: 54px*/
+    }
+
+    .footer-country{
+        width: -webkit-fill-available;
+    }
+
+    .select-country{
+        width: -webkit-fill-available;
+    }
+
+    .footer-others{
+        height: 400px;
+        margin-top:60px;
+    }
+
+    .footer-items{
+        width: 326.5px; 
+        padding: 0px 16px;
+        margin-bottom: 0px;
+        margin-top: 17px;
+        list-style: none;
+        float: none;
+    } 
+
+}
+
+
+@media only screen and (max-width: 1115px){
+    .body-content{
+       width: unset;
+       height: unset;
+       margin: 0px auto;
+       margin-top: 650px;
+   } 
+   .h3-tri {
+       box-sizing: border-box;
+       width: unset;
+   }
+   
+   .destinos-ciudades{
+       width: 230px;
+       height: 228px;
+   }
+}

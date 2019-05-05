@@ -1,55 +1,57 @@
-{"nombre":"العالم العربي trivago"}
-{"nombre":"trivago Australia"}
-{"nombre":"trivago Argentin"}
-{"nombre":"trivago България"}
-{"nombre":"trivago België"}
-{"nombre":"trivago Brasil"}
-{"nombre":"trivago Canada"}
-{"nombre":"trivago Česko"}
-{"nombre":"trivago Chile"}
-{"nombre":"trivago Colombia"}
-{"nombre":"trivago Danmark"}
-{"nombre":"trivago Deutchland"}
-{"nombre":"trivago Ecuador"}
-{"nombre":"trivago Ελλάδα"}
-{"nombre":"trivago España"}
-{"nombre":"trivago France"}
-{"nombre":"trivago 한국"}
-{"nombre":"trivago Hrvatska"}
-{"nombre":"trivago India"}
-{"nombre":"trivago Indonesia"}
-{"nombre":"trivago Ireland"}
-{"nombre":"trivago Italia"}
-{"nombre":"trivago Magyarország"}
-{"nombre":"trivago Malaysia"}
-{"nombre":"trivago Mexico"}
-{"nombre":"trivago Nederland"}
-{"nombre":"trivago New Zealand"}
-{"nombre":"trivago Norge"}
-{"nombre":"trivago Österreich"}
-{"nombre":"trivago Perú"}
-{"nombre":"trivago Philippines"}
-{"nombre":"trivago Polska"}
-{"nombre":"trivago Portugal"}
-{"nombre":"trivago ประเทศไทย"}
-{"nombre":"trivago 日本"}
-{"nombre":"trivago România"}
-{"nombre":"trivago Россия"}
-{"nombre":"trivago Schweiz"}
-{"nombre":"trivago Singapore"}
-{"nombre":"trivago Slovenija"}
-{"nombre":"trivago Slovensko"}
-{"nombre":"trivago South Africa"}
-{"nombre":"trivago Srbija"}
-{"nombre":"trivago Suomi"}
-{"nombre":"trivago Sverige"}
-{"nombre":"trivago 台灣"}
-{"nombre":"trivago Türkey"}
-{"nombre":"trivago UAE"}
-{"nombre":"trivago United Kingdom"}
-{"nombre":"trivago Uruguay"}
-{"nombre":"trivago USA"}
-{"nombre":"trivago Việt Nam"}
-{"nombre":"trivago 香港"}
-{"nombre":"trivago ישראל"}
+[
+{"nombre":"العالم العربي trivago"},
+{"nombre":"trivago Australia"},
+{"nombre":"trivago Argentin"},
+{"nombre":"trivago България"},
+{"nombre":"trivago België"},
+{"nombre":"trivago Brasil"},
+{"nombre":"trivago Canada"},
+{"nombre":"trivago Česko"},
+{"nombre":"trivago Chile"},
+{"nombre":"trivago Colombia"},
+{"nombre":"trivago Danmark"},
+{"nombre":"trivago Deutchland"},
+{"nombre":"trivago Ecuador"},
+{"nombre":"trivago Ελλάδα"},
+{"nombre":"trivago España"},
+{"nombre":"trivago France"},
+{"nombre":"trivago 한국"},
+{"nombre":"trivago Hrvatska"},
+{"nombre":"trivago India"},
+{"nombre":"trivago Indonesia"},
+{"nombre":"trivago Ireland"},
+{"nombre":"trivago Italia"},
+{"nombre":"trivago Magyarország"},
+{"nombre":"trivago Malaysia"},
+{"nombre":"trivago Mexico"},
+{"nombre":"trivago Nederland"},
+{"nombre":"trivago New Zealand"},
+{"nombre":"trivago Norge"},
+{"nombre":"trivago Österreich"},
+{"nombre":"trivago Perú"},
+{"nombre":"trivago Philippines"},
+{"nombre":"trivago Polska"},
+{"nombre":"trivago Portugal"},
+{"nombre":"trivago ประเทศไทย"},
+{"nombre":"trivago 日本"},
+{"nombre":"trivago România"},
+{"nombre":"trivago Россия"},
+{"nombre":"trivago Schweiz"},
+{"nombre":"trivago Singapore"},
+{"nombre":"trivago Slovenija"},
+{"nombre":"trivago Slovensko"},
+{"nombre":"trivago South Africa"},
+{"nombre":"trivago Srbija"},
+{"nombre":"trivago Suomi"},
+{"nombre":"trivago Sverige"},
+{"nombre":"trivago 台灣"},
+{"nombre":"trivago Türkey"},
+{"nombre":"trivago UAE"},
+{"nombre":"trivago United Kingdom"},
+{"nombre":"trivago Uruguay"},
+{"nombre":"trivago USA"},
+{"nombre":"trivago Việt Nam"},
+{"nombre":"trivago 香港"},
+{"nombre":"trivago ישראל"},
 {"nombre":"trivago 中国"}
+]
