@@ -177,8 +177,7 @@ class Hotel{
         $this->masOfertas = $masOfertas;
     }
     
-
-    public static function listar(){
+    public static function obtenerHoteles(){
         $archivo = fopen("../data/hoteles.json","r");
         $respuesta = array();
         while(($linea=fgets($archivo))){
@@ -187,28 +186,7 @@ class Hotel{
         fclose($archivo);
         return json_encode($respuesta);
     }
-    public static function obtenerListas($codigoLocalizacion){
-        $registros = json_decode(file_get_contents("../data/hoteles1.json"),true);
-        $resultado = array();
-        for ($i=0;$i<count($registros);$i++){
-                if ($registros[$i]["codigoLocalizacion"]==$codigoLocalizacion){
-                        $resultado[] = $registros[$i];
-                }
-        }
-        $registros = null;
-        return json_encode($resultado);
-}
-public static function obtenerPuntos($codigoCalificacion){
-    $registros = json_decode(file_get_contents("../data/hoteles1.json"),true);
-    $res = array();
-    for ($i=0;$i<count($registros);$i++){
-            if ($registros[$i]["codigoCalificacion"]==$codigoCalificacion){
-                    $res[] = $registros[$i];
-            }
-    }
-    $registros = null;
-    return json_encode($res);
-}
+   
 
 
 }
